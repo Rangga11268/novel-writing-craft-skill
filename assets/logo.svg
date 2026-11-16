@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Novel Writing Craft Engine Logo</title>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="256" height="256" rx="56" fill="url(#bgGrad)"/>
+  <rect x="6" y="6" width="244" height="244" rx="50" fill="none" stroke="url(#borderGrad)" stroke-width="2.5"/>
+
+  <!-- Golden Nib Shadow Accent (Left Half) -->
+  <path d="M128 42 L93 103 C93 103 104 144 108 158 C112 172 122 176 128 176 Z" 
+        fill="#B45309"/>
+
+  <!-- Golden Nib Body (Right Half) -->
+  <path d="M128 42 L163 103 C163 103 152 144 148 158 C144 172 134 176 128 176 Z" 
+        fill="url(#goldGrad)"/>
+
+  <!-- Center Slit Cutout -->
+  <path d="M127 42 H129 V100 H127 Z M127 120 H129 V176 H127 Z" fill="#0F172A"/>
+
+  <!-- Compass Star Breather Hole -->
+  <path d="M128 102 L131 108 L138 110 L131 112 L128 118 L125 112 L118 110 L125 108 Z" 
+        fill="#0F172A"/>
+
+  <!-- Open Manuscript Wings (Base Left Page) -->
+  <path d="M128 176 C105 174 72 165 44 182 C44 182 52 204 88 200 C108 198 122 190 128 176 Z" 
+        fill="url(#cyanGrad)"/>
+
+  <!-- Open Manuscript Wings (Base Right Page) -->
+  <path d="M128 176 C151 174 184 165 212 182 C212 182 204 204 168 200 C148 198 134 190 128 176 Z" 
+        fill="url(#cyanGrad)"/>
+
+  <!-- Center Spine Golden Seal -->
+  <circle cx="128" cy="180" r="5" fill="#FDE68A"/>
+
+  <!-- Sparkle Accents (Story Craft Brilliance) -->
+  <path d="M66 82 L68 87 L74 88 L68 90 L66 96 L64 90 L58 88 L64 87 Z" fill="#FDE68A"/>
+  <path d="M190 76 L192 82 L199 84 L192 86 L190 92 L188 86 L181 84 L188 82 Z" fill="#38BDF8"/>
+</svg>

@@ -1,8 +1,8 @@
 ---
 name: novel-writing-craft
-description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, natural dialogue & language stylistics (Indonesian literary standard vs authentic colloquial lu-gue/slang, discourse particle grammar sih/kan/dong/deh, elimination of AI translationese and dead metaphors), quantitative pacing metrics (Word Count by Genre, 2,000–3,500 word sweet spot, Act Budgeting, 260 WPM reading telemetry, Qidian & Kindle retention analytics), neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions (including Danmei, BL, Thriller, Fantasy, Sci-Fi).
+description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), 3 Genre Playbooks (Romance/BL/Danmei, Thriller/Psychological Mystery, Fantasy/Progression/LitRPG), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, natural dialogue & language stylistics (Indonesian literary standard vs authentic colloquial lu-gue/slang, discourse particle grammar sih/kan/dong/deh, elimination of AI translationese and dead metaphors), quantitative pacing metrics (Word Count by Genre, 2,000–3,500 word sweet spot, Act Budgeting, 260 WPM reading telemetry, Qidian & Kindle retention analytics), neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions.
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
   status: active
   domain: fiction-craft
   target_ai: universal
@@ -19,6 +19,7 @@ Whether pasted into **Google Gemini (Gems)**, **ChatGPT (Custom GPTs / System Pr
 
 Activate this skill whenever the user asks to:
 * Design, plot, outline, or brainstorm a novel, screenplay, webnovel, or short story.
+* Execute specialized Genre Playbooks: **Romance & BL / Danmei**, **Thriller & Psychological Mystery**, or **Fantasy & Progression / Isekai / LitRPG**.
 * Calibrate language registers: flowing literary narrative vs. natural colloquial dialogue (*lu-gue*, urban slang, academic dialects).
 * Cleanse prose from AI translationese (*kalk canggung* like "membuat akal sehat", "menemukan dirinya").
 * Calculate word count budgets, chapter allocations, reading durations, or serial release schedules.
@@ -30,6 +31,7 @@ Activate this skill whenever the user asks to:
 | Mode | Role | Primary Objective | Key Frameworks |
 |---|---|---|---|
 | `architect` | Master Story Architect | Plot design, act structuring, beat calibration | Three-Act, Truby 22 Steps, Save the Cat, Act Word Budgeting |
+| `genre-specialist` | Genre Lead / Script Doctor | Genre conventions, obligatory scenes, trope subversion | Romance/BL Playbook, Thriller Playbook, Progression Playbook |
 | `profiler` | Character Psychologist | 3D Triad (Wound, Lie, Want, Need), voice design | Positive/Flat/Corruption Arcs, Linguistic Fingerprints & Sociolects |
 | `drafter` | Novelist (Scene Drafter) | Chapter drafting via Scene & Sequel, visceral showing | Palahniuk Submerged I, 5-Sense Calibration, 2,500-word target |
 | `editor` | Senior Developmental Editor | Pacing diagnosis, anti-slop sweep, subtext audit | Walter Murch Rule of Six, Zeigarnik Loops, Anti-Translationese CLI |
@@ -61,7 +63,7 @@ AI models default to purple prose, emotional labeling, awkward literal translati
 
 ---
 
-## 3. Progressive Disclosure: Context Pointers (12 Deep Modules)
+## 3. Progressive Disclosure: Context Pointers (15 Deep Modules)
 
 Drill down into domain reference modules as required by the current task:
 
@@ -76,7 +78,10 @@ Drill down into domain reference modules as required by the current task:
 * **Worldbuilding & Magic Systems:** Read [`references/09_worldbuilding_and_magic_systems.md`](references/09_worldbuilding_and_magic_systems.md) for Sanderson's 3 Laws of Magic/Systems, Promise-Progress-Payoff, and Hemingway's Iceberg Principle.
 * **Literary Mastery & Stylistics:** Read [`references/10_literary_mastery_and_prose_stylistics.md`](references/10_literary_mastery_and_prose_stylistics.md) for Palahniuk's Submerged "I", Stephen King's Adverb Discipline, George Saunders' Gas Station Rule, and Le Guin's Language Cadence.
 * **Quantitative Pacing & Word Count Benchmarks:** Read [`references/11_quantitative_word_count_and_pacing_metrics.md`](references/11_quantitative_word_count_and_pacing_metrics.md) for Chapter Length Targets (2,000–3,500 word sweet spot), Novel Word Count by Genre, 25-50-25 Act Budgeting, 260 WPM reading telemetry, and Qidian/Kindle DNF retention curves.
-* **Indonesian Stylistics & Natural Dialogue:** Read [`references/12_indonesian_stylistics_and_dialogue_slang.md`](references/12_indonesian_stylistics_and_dialogue_slang.md) for Literary Standard Narrative vs. Colloquial Dialogue, Particle Grammar (*sih, kan, dong, deh, kok*), Sociolect Matrices (Urban Youth Slang vs. Academic vs. Survival), and Acoustic Read-Aloud Testing.
+* **Indonesian Stylistics & Dialogue Slang:** Read [`references/12_indonesian_stylistics_and_dialogue_slang.md`](references/12_indonesian_stylistics_and_dialogue_slang.md) for Literary Standard Narrative vs. Colloquial Dialogue, Particle Grammar (*sih, kan, dong, deh, kok*), Sociolect Matrices (Urban Youth Slang vs. Academic vs. Survival), and Acoustic Read-Aloud Testing.
+* **[NEW] Romance & BL / Danmei Playbook:** Read [`references/13_genre_playbook_romance_and_bl.md`](references/13_genre_playbook_romance_and_bl.md) for HEA contract, Enemies-to-lovers, Crematorium groveling, Omegaverse ABO, and 8 Obligatory Scenes.
+* **[NEW] Thriller & Mystery Playbook:** Read [`references/14_genre_playbook_thriller_and_mystery.md`](references/14_genre_playbook_thriller_and_mystery.md) for Knox's Decalogue (Fair Play), Locked Room, Domestic Suspense, Unreliable Narrators, Ticking Clocks, and Hero at Mercy of Villain.
+* **[NEW] Fantasy & Progression / Isekai Playbook:** Read [`references/15_genre_playbook_fantasy_and_progression.md`](references/15_genre_playbook_fantasy_and_progression.md) for Quantified Dopamine Loops, Broken Underdog Synergies, Regression Qiyun, Face-Slapping (*打脸*), and Solved Boss Raids.
 
 ---
 
@@ -93,6 +98,7 @@ Drill down into domain reference modules as required by the current task:
 ## 5. Diagnostic Quality Gate (Pre-Finalization Checklist)
 
 Before concluding any chapter or scene draft, execute this verification pass:
+- [ ] **Genre Obligatory Scene Met:** Does this chapter fulfill its genre contract (e.g., Fair Play clue in Mystery, Proof of Sacrifice in Romance, Measurable Growth in Progression)?
 - [ ] **Word Count Check:** Is the chapter within the optimal reading window (2,000–3,500 words, ~10–14 mins)? If over 4,000 words, has a visual/scene break been provided?
 - [ ] **Acoustic Read-Aloud Test:** Does dialogue sound like a living human speaking? Has all mechanical translationese ("membuat akal sehat", "menemukan dirinya") been purged?
 - [ ] **Sociolect Consistency:** Do characters speak in their proper social register (urban slang, academic, or working-class survival)?

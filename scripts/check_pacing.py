@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Pacing, Word Count & Anti-Slop Diagnostic Checker for Novel Chapters.
-Analyzes word count, reading duration, dialogue ratios, and flags generic AI prose patterns.
+Pacing, Word Count, Telemetry & Anti-Translationese Diagnostic Checker for Novel Chapters.
+Analyzes word count, reading duration, dialogue ratios, and flags generic AI prose and translationese patterns.
 """
 
 import sys
@@ -30,6 +30,19 @@ THOUGHT_VERBS = [
     r"\bthought that\b",
 ]
 
+TRANSLATIONESE_SLOP = [
+    (r"menemukan dirinya", "Kalk 'he found himself' -> Ganti dengan 'mendapati dirinya' / 'tahu-tahu dia sudah'"),
+    (r"membuat akal sehat", "Kalk 'makes sense' -> Ganti dengan 'masuk akal'"),
+    (r"mengambil napas dalam", "Kalk 'take a deep breath' -> Ganti dengan 'menarik napas panjang'"),
+    (r"di penghujung hari", "Kalk 'at the end of the day' -> Ganti dengan 'pada akhirnya' / 'biar bagaimanapun'"),
+    (r"mata mereka terkunci", "Kalk 'their eyes locked' -> Ganti dengan 'tatapan mereka bersirobok' / 'bertemu'"),
+    (r"(?:tidak|tak) bisa menahan diri untuk tidak", "Kalk 'couldn't help but' -> Ganti dengan 'tak kuasa menahan'"),
+    (r"tapestri takdir", "AI-slop cliché -> Ganti dengan detail indrawi konkret"),
+    (r"relung (?:jiwa )?terdalam", "AI-slop cliché -> Ganti dengan respon somatik/fisik nyata"),
+    (r"simfoni keheningan", "AI-slop cliché -> Ganti dengan suara akustik ruangan nyata"),
+    (r"tarian bayang-bayang", "AI-slop cliché -> Ganti dengan kontras pencahayaan nyata"),
+]
+
 def analyze_chapter(file_path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
@@ -50,9 +63,9 @@ def analyze_chapter(file_path):
     dialogue_words = sum(len(re.findall(r"\b\w+\b", d)) for d in dialogues)
     dialogue_ratio = (dialogue_words / total_words * 100) if total_words > 0 else 0
 
-    print("=" * 60)
-    print(" 📖 NOVEL CHAPTER PACING & TELEMETRY REPORT")
-    print("=" * 60)
+    print("=" * 65)
+    print(" 📖 NOVEL CHAPTER PACING & STYLISTICS DIAGNOSTIC REPORT")
+    print("=" * 65)
     print(f"File                 : {file_path}")
     print(f"Total Words          : {total_words:,} words")
     print(f"Reading Time (Print) : ~{print_time_mins:.1f} minutes (@ 260 WPM)")
@@ -92,13 +105,23 @@ def analyze_chapter(file_path):
         matches = re.findall(pattern, content, re.IGNORECASE)
         if matches:
             slop_count += len(matches)
-            print(f"  ⚠️ Palahniuk Thought Verb ({len(matches)}x): '{pattern}' (Unpack into sensory action)")
+            print(f"  ⚠️ Thought Verb ({len(matches)}x): '{pattern}' (Unpack into sensory action)")
 
-    if slop_count == 0:
-        print("  ✅ Clean! No banned AI-slop or thought verbs detected.")
+    # Translationese & Slop checks
+    print("\n🌐 Checking for AI-Translationese & Pseudo-Poetic Clichés:")
+    trans_count = 0
+    for pattern, advice in TRANSLATIONESE_SLOP:
+        matches = re.findall(pattern, content, re.IGNORECASE)
+        if matches:
+            trans_count += len(matches)
+            print(f"  🚨 Translationese / Slop ({len(matches)}x): '{pattern}' -> {advice}")
+
+    total_issues = slop_count + trans_count
+    if total_issues == 0:
+        print("  ✅ Clean! No banned AI-slop, thought verbs, or translationese detected.")
     else:
-        print(f"\n⚠️ Total issues flagged: {slop_count}. Replace with somatic visceral reactions or action beats.")
-    print("=" * 60)
+        print(f"\n⚠️ Total issues flagged: {total_issues}. Please revise following references/12_indonesian_stylistics_and_dialogue_slang.md")
+    print("=" * 65)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

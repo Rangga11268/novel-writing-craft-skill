@@ -1,47 +1,73 @@
 # 🖋️ Universal Novel Writing Craft Engine (AI Agent Skill)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Validate Skill](https://github.com/Rangga11268/novel-writing-craft-skill/actions/workflows/validate-skill.yml/badge.svg)](https://github.com/Rangga11268/novel-writing-craft-skill/actions)
 [![AI Agent Ready](https://img.shields.io/badge/AI%20Agent-Universal-brightgreen.svg)]()
 [![Compatible: Antigravity | Claude Code | Cursor](https://img.shields.io/badge/Compatible-Antigravity%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)]()
 
-A master-level fiction and novel writing craft engine designed for AI Agents (Antigravity, Claude Code, Cursor, ChatGPT). It elevates AI from generating generic prose into a rigorous, industry-grade **Story Architect** and **Developmental Editor**.
+A master-level fiction and novel writing craft engine designed for AI Agents (Google Antigravity, Claude Code, Cursor, ChatGPT). It elevates AI from generating generic prose into a rigorous, industry-grade **Story Architect** and **Developmental Editor**.
 
 ---
 
-## 🌟 Core Pillars Included
+## 🌟 Repository Architecture
 
-1. **Anti-AI-Slop Creed:** Eliminates melodramatic dialogue tags, abstract emotional labeling, moralizing summaries, head-hopping, and "As You Know, Bob" infodumping.
-2. **4 Narrative Architectures:**
-   - Classic Three-Act Paradigm (Syd Field & K.M. Weiland)
-   - Save the Cat! Writes a Novel 15 Beats (Blake Snyder & Jessica Brody)
-   - 7-Point Story Structure (Dan Wells)
-   - Story Grid: 5 Commandments of Storytelling & Life Value Shifts (Shawn Coyne)
-3. **3D Character Psychology:** Triad of The Ghost/Wound $\rightarrow$ The Lie Believed $\rightarrow$ The Want vs The Need, across 4 character arcs (Positive Change, Flat, Disillusionment, Corruption).
-4. **Scene & Sequel Mechanics:** Goal $\rightarrow$ Conflict $\rightarrow$ Disaster alternating with Reaction $\rightarrow$ Dilemma $\rightarrow$ Decision.
-5. **Visceral Show, Don't Tell:** Somatic autonomic responses, behavioral tells, and objective correlatives.
-6. **Subtextual Dialogue:** Dialogue as action, iceberg theory, and distinct linguistic fingerprints.
-7. **Quality Gate Checklist:** 6-point verification before finalizing any chapter.
+```
+novel-writing-craft-skill/
+├── .github/workflows/
+│   └── validate-skill.yml              # CI/CD validation for skill & scripts
+├── references/                         # In-depth craft theory modules
+│   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat, 7-Point, Story Grid
+│   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie, Want vs Need
+│   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction
+│   ├── 04_visceral_prose_and_sensory.md    # Somatic showing, Anti-Telling
+│   ├── 05_dialogue_subtext_and_combat.md   # Iceberg theory & distinct voices
+│   └── 06_danmei_and_romance_tropes.md     # Huan Gong, Crematorium, Awakening
+├── templates/                          # Ready-to-use plotting cards
+│   ├── character_dossier_template.md
+│   ├── chapter_outline_template.md
+│   ├── scene_beat_sheet_template.md
+│   └── book_proposal_pitch_template.md
+├── scripts/
+│   └── check_pacing.py                 # Automated pacing & anti-slop diagnostic CLI
+├── SKILL.md                            # Core universal skill entrypoint
+├── CONTRIBUTING.md                     # Community contribution guidelines
+├── LICENSE                             # MIT License
+└── README.md
+```
 
 ---
 
 ## 🚀 Installation & Usage
 
 ### 1. Google Antigravity
-Place the folder in your user skills directory:
+Clone or place the repository in your personal skills directory:
 ```bash
-~/.gemini/config/skills/novel-writing-craft/SKILL.md
+git clone https://github.com/Rangga11268/novel-writing-craft-skill.git ~/.gemini/config/skills/novel-writing-craft
 ```
 Antigravity automatically discovers and loads the skill whenever you request novel plotting, worldbuilding, or chapter writing.
 
 ### 2. Claude Code
 Place the skill inside your project's `.claude/skills/` directory:
 ```bash
-.claude/skills/novel-writing-craft/SKILL.md
+mkdir -p .claude/skills
+git clone https://github.com/Rangga11268/novel-writing-craft-skill.git .claude/skills/novel-writing-craft
 ```
-Or append the instructions to your `CLAUDE.md`.
 
 ### 3. Cursor / Windsurf / VS Code
-Place the instructions inside `.cursorrules` or `.cursor/rules/novel-writing-craft.mdc`.
+Place the contents of `SKILL.md` inside your `.cursorrules` or `.cursor/rules/novel-writing-craft.mdc`.
+
+---
+
+## 🛠️ Built-in Diagnostics CLI
+
+Run the automated pacing and anti-slop diagnostic on any chapter markdown file:
+```bash
+python scripts/check_pacing.py path/to/chapter.md
+```
+Output includes:
+* Word count & dialogue-to-narrative ratio assessment
+* Over-narration / white-room syndrome alerts
+* Automatic detection of generic AI-slop telling patterns
 
 ---
 

@@ -8,10 +8,10 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://github.com/Rangga11268/novel-writing-craft-skill/actions"><img src="https://img.shields.io/badge/CI-Passing-success.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" /></a>
     <a href="#-universal-ai-compatibility"><img src="https://img.shields.io/badge/Universal%20AI-Gemini%20%7C%20ChatGPT%20%7C%20Claude%20%7C%20DeepSeek-purple.svg?style=for-the-badge" alt="Universal AI" /></a>
-    <a href="#-the-17-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-17%20Deep%20Guides-amber.svg?style=for-the-badge" alt="17 Modules" /></a>
+    <a href="#-the-19-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-19%20Deep%20Guides-amber.svg?style=for-the-badge" alt="19 Modules" /></a>
+    <a href="#-the-9-master-genre-playbooks"><img src="https://img.shields.io/badge/Playbooks-9%20Master%20Genres-indigo.svg?style=for-the-badge" alt="9 Master Genres" /></a>
+    <a href="#-user-intent-calibration--adaptive-intake"><img src="https://img.shields.io/badge/Adaptive%20Intake-100%25%20Custom-emerald.svg?style=for-the-badge" alt="Adaptive Intake" /></a>
     <a href="#-narrative-logic--plot-hole-prevention"><img src="https://img.shields.io/badge/Continuity-Zero%20Plot%20Holes-teal.svg?style=for-the-badge" alt="Zero Plot Holes" /></a>
-    <a href="#-linguistic-realism-character-idiolects--world-verisimilitude"><img src="https://img.shields.io/badge/Dialogue-Living%20Voices-blue.svg?style=for-the-badge" alt="Living Voices" /></a>
-    <a href="#-genre-playbooks-top-3-categories"><img src="https://img.shields.io/badge/Playbooks-Romance%20%7C%20Thriller%20%7C%20Fantasy-indigo.svg?style=for-the-badge" alt="Genre Playbooks" /></a>
     <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Prose%20Quality-Anti--AI--Slop-red.svg?style=for-the-badge" alt="Anti Slop" /></a>
   </p>
 </div>
@@ -38,25 +38,40 @@ The **Novel Writing Craft Engine** transforms **ANY AI** into a relentless **Mas
 
 ---
 
-## 🎭 Genre Playbooks (The Top 3 Global Categories)
+## 🎭 The 9 Master Genre Playbooks
 
-Dedicated structural playbooks covering core promises, bestselling tropes, obligatory scenes, and fatal pitfalls:
+Every genre represents a sacred psychological contract between author and reader. The engine comes with **9 fully realized genre playbooks** covering emotional catharsis, obligatory scenes, core tropes, and fatal pitfalls across global publishing (Wattpad, Webnovel/Qidian, Royal Road, Kindle Unlimited, and Asian/Indonesian bestsellers):
 
-### 1. [Romance & BL / Danmei](references/13_genre_playbook_romance_and_bl.md)
-* **Emotional Contract:** Connection vs. Isolation. **Non-negotiable HEA/HFN**.
-* **Sub-genres & Tropes:** Enemies-to-lovers, Forced Proximity (*Only One Bed*, *Who did this to you?*), Omegaverse (ABO biological agency), and Danmei Crematorium (*Zhuī Qī Huǒ Zàng Chǎng* 追妻火葬场 - groveling, heart-death *Xīn Sǐ*, and *Huàn Gōng* replacement).
-* **Obligatory Scenes:** Context Boundary $\rightarrow$ Volatile Collision $\rightarrow$ Forced Enclosure $\rightarrow$ First Crack/Kiss $\rightarrow$ Proof of Sacrifice $\rightarrow$ All-Hope-Is-Lost Breakup $\rightarrow$ Crucible of Penance $\rightarrow$ Recommitment (HEA).
+| Genre & Playbook | Emotional Contract | Bestselling Tropes | Obligatory Climax Scene |
+|---|---|---|---|
+| **1. [Romance & BL / Danmei](references/13_genre_playbook_romance_and_bl.md)** | Connection vs Isolation (**Guaranteed HEA**) | Enemies-to-lovers, Crematorium groveling (*Huǒ Zàng Chǎng*), Omegaverse ABO, *Huàn Gōng* replacement. | Proof of Sacrifice $\rightarrow$ Recommitment (HEA) |
+| **2. [Thriller & Mystery](references/14_genre_playbook_thriller_and_mystery.md)** | Fear, Paranoia & Cognitive Truth | Knox's Decalogue Fair Play, Locked Room, Domestic Gaslighting, Cat-and-Mouse. | Hero at Mercy of Villain $\rightarrow$ Weapon of Wit Reversal |
+| **3. [Fantasy & Progression / LitRPG](references/15_genre_playbook_fantasy_and_progression.md)** | Impotence to Omnipotence | Quantified Leveling, Broken Underdog Synergies, Regression (*Chóngshēng*), Face-slapping (*Dǎliǎn*). | Conceptual Bottleneck $\rightarrow$ Apotheosis Breakthrough |
+| **4. [Horror & Folk Dread](references/18_expanded_genre_playbooks_master_matrix.md#️-playbook-4-horror-folk-dread--supernatural-mystery)** | Visceral Helplessness & Cosmic Dread | Indonesian Pesugihan/Santet, Cursed Rules/Analog Horror, Eldritch entities, Village Taboos. | Absolute Isolation $\rightarrow$ Terrifying Pyrrhic Sacrifice |
+| **5. [Sci-Fi & Cyberpunk](references/18_expanded_genre_playbooks_master_matrix.md#-playbook-5-sci-fi-cyberpunk--dystopian-fiction)** | Cognitive Estrangement & Wonder | High tech / Low life, Megacorps (*Zaibatsu*), Wetware implants, Dystopian resource ration. | Confronting the Corporate Core $\rightarrow$ System Paradigm Shift |
+| **6. [Romantasy & Werewolf / Alpha](references/18_expanded_genre_playbooks_master_matrix.md#-playbook-6-romantasy--paranormal--werewolf-romance)** | Primal Attraction vs Free Will | Rejected Mate, Alpha/Luna pack hierarchy, Fae shadow-daddies, Enemies with daggers. | Sovereign Power Awakening $\rightarrow$ Overthrowing Pack Tyrant |
+| **7. [Historical & Palace Intrigue / Wuxia](references/18_expanded_genre_playbooks_master_matrix.md#-playbook-7-historical-drama-palace-intrigue--wuxia)** | Lethal Decorum & Chivalric Honor (*Xia*) | Imperial Harem poisonings, Transmigrated Empress, Eunuch brokers, Wandering swordsmen. | The Grand Banquet Counter-Trap $\rightarrow$ Bloodless Sovereign Coup |
+| **8. [Slice of Life & Cozy Fiction](references/18_expanded_genre_playbooks_master_matrix.md#-playbook-8-slice-of-life-cozy-fiction--contemporary-drama)** | Emotional Warmth & Healing from Burnout | Midnight cafe / bookstore haven, Metropop campus angst, Found family, Shared quiet meals. | The Vulnerable Confession $\rightarrow$ Affirmation of Slow Living |
+| **9. [Crime Syndicate & Heist Thriller](references/18_expanded_genre_playbooks_master_matrix.md#-playbook-9-crime-syndicate-heist--tactical-thriller)** | Meticulous Tradecraft & Blood Loyalty | Ocean's style impossible vault, The Specialist Crew, Mafia *Omertà*, Undercover Betrayal. | The Unforeseen Heist Hitch $\rightarrow$ The Double-Cross Mastermind |
 
-### 2. [Thriller & Psychological Mystery](references/14_genre_playbook_thriller_and_mystery.md)
-* **Emotional Contract:** Fear, Dread, Paranoia, and the Cognitive Catharsis of Truth.
-* **Sub-genres & Tropes:** Whodunit, Locked-Room, Domestic Suspense (gaslighting spouse), Epistemic Vertigo (Unreliable Narrator), and Mirror Antagonists (Cat-and-Mouse).
-* **Knox's Decalogue (Fair Play):** All clues must be shared openly with the reader before the climax. No secret poisons, no late-introduced killers.
-* **Obligatory Scenes:** Inciting Mastermind Crime $\rightarrow$ Speech in Praise of Villain $\rightarrow$ Investigator Makes It Personal $\rightarrow$ Red Herring Trap $\rightarrow$ Ticking Clock $\rightarrow$ Hero at Mercy of Villain $\rightarrow$ Weapon of Wit Reversal $\rightarrow$ Final Twist.
+---
 
-### 3. [Fantasy & Progression / Isekai / LitRPG](references/15_genre_playbook_fantasy_and_progression.md)
-* **Emotional Contract:** Impotence to Omnipotence, Helplessness to Cosmic Mastery.
-* **Sub-genres & Tropes:** Regression (Reversal of Regret), "Trash" Class with Broken Synergies, System Apocalypses, Status Windows, and the Catharsis of Retribution (*Face-Slapping* / 打脸).
-* **Obligatory Scenes:** Genesis / Regression $\rightarrow$ Baseline Underdog Stigma $\rightarrow$ Secret Synergy Discovered $\rightarrow$ First Solo Crucible $\rightarrow$ Public Arena Spectacle $\rightarrow$ Conceptual Bottleneck Wall $\rightarrow$ Cataclysmic Boss Raid $\rightarrow$ Apotheosis Breakthrough.
+## 🎛️ User Intent Calibration & Adaptive Intake
+
+No two authors want the exact same story. Instead of guessing, the engine runs an **Adaptive Intent Calibration Protocol** ([Module 19](references/19_user_intent_calibration_and_adaptive_intake.md)) before writing a single scene.
+
+```
+[ 1. TONE & ATMOSPHERE ]     Cozy / Warm / Whimsical  ◄──────────────────►  Grimdark / Bleak / Visceral
+[ 2. PACING VELOCITY ]       Slow Burn / Introspection ◄────────────────►  High-Speed Adrenaline
+[ 3. REALISM & LOGIC LEVEL ] Hard Documentary Tech    ◄──────────────────►  Mythic / Soft System / Rule of Cool
+[ 4. COMMERCIAL PLATFORM ]   Serial (Wattpad/RR/Webnovel) ◄──────────────►  Trade Book (Kindle / Gramedia)
+[ 5. SPICE & VIOLENCE ]      Clean / Fade-to-Black    ◄──────────────────►  Explicit / Visceral Mature 18+
+[ 6. ENDING CONTRACT ]       Guaranteed HEA           ◄──────────────────►  Bittersweet / Tragic / Pyrrhic
+```
+
+* **Interactive Intake Options:**
+  * **5-Minute Express Track:** 5 lightning questions for instant brainstorming and scene generation.
+  * **Master Architect Track:** Comprehensive 10-dimension creative brief ([`creative_intent_and_project_brief_template.md`](templates/creative_intent_and_project_brief_template.md)) locking in core emotional catharsis, sacred must-have tropes, and strict dealbreaker guardrails (*e.g., zero cheating, no miscommunication idiot plots*).
 
 ---
 
@@ -157,7 +172,7 @@ You don't need to be a developer or run code agents to use this. You can plug th
 
 ## 🏛️ Architecture Overview
 
-Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 17 specialized domain modules on demand:
+Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 19 specialized domain modules on demand:
 
 ```
 novel-writing-craft-skill/
@@ -166,7 +181,7 @@ novel-writing-craft-skill/
 │   └── logo.png                        # Rendered 512px high-res asset
 ├── .github/workflows/
 │   └── validate-skill.yml              # Automated CI/CD diagnostic tester
-├── references/                         # The 17 In-Depth Craft Modules
+├── references/                         # The 19 In-Depth Craft Modules
 │   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat 15 Beats, 7-Point, Story Grid
 │   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie Believed, Want vs Need, 4 Arcs
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction-Dilemma-Decision
@@ -183,10 +198,13 @@ novel-writing-craft-skill/
 │   ├── 14_genre_playbook_thriller_and_mystery.md # Thriller & Mystery Playbook (Fair Play, Locked Room, Cat & Mouse)
 │   ├── 15_genre_playbook_fantasy_and_progression.md # Fantasy & Progression/Isekai (Quantified Growth, Face-Slapping)
 │   ├── 16_plothole_prevention_and_logic_auditing.md # Plot Hole Taxonomies, Causality Auditing & 4-Gates Test
-│   └── 17_linguistic_realism_idiolects_and_verisimilitude.md # [NEW] 5 Registers, Code-Switching, 6D Voice Fingerprints & Sensory Thisness
+│   ├── 17_linguistic_realism_idiolects_and_verisimilitude.md # 5 Registers, Code-Switching, 6D Voice Fingerprints & Sensory Thisness
+│   ├── 18_expanded_genre_playbooks_master_matrix.md # [NEW] 6 Extra Playbooks: Horror, Sci-Fi, Romantasy, Palace/Wuxia, Slice-of-Life, Heist
+│   └── 19_user_intent_calibration_and_adaptive_intake.md # [NEW] 6 Creative Sliders, Express vs Master Intake, Anti-Trope Guardrails
 ├── templates/                          # Production-Ready Plotting Cards & Ledgers
+│   ├── creative_intent_and_project_brief_template.md # [NEW] Comprehensive Author Onboarding & Intent Brief
 │   ├── character_dossier_template.md   # 3D character psychological spec
-│   ├── character_linguistic_fingerprint_template.md # [NEW] 6D Voice Fingerprint & Register Modulation Spec
+│   ├── character_linguistic_fingerprint_template.md # 6D Voice Fingerprint & Register Modulation Spec
 │   ├── chapter_outline_template.md     # Scene & Sequel chapter blueprint
 │   ├── scene_beat_sheet_template.md    # 5-beat micro-scene rhythm
 │   ├── word_count_and_act_budget_calculator.md # Mathematical act & pacing budget worksheet
@@ -207,6 +225,7 @@ novel-writing-craft-skill/
 ```mermaid
 flowchart LR
     A[User Prompt] --> B{Choose Mode}
+    B -->|Intent Calibration| IC[intent-calibrator]
     B -->|Plot Design & Budget| C[architect]
     B -->|Continuity & Logic Audit| CA[continuity-auditor]
     B -->|Genre Specialization| D[genre-specialist]
@@ -214,6 +233,7 @@ flowchart LR
     B -->|Prose Execution| F[drafter]
     B -->|Diagnostic Audit| G[editor]
 
+    IC --> HB[project_brief.md]
     C --> H[plot_outline.md]
     CA --> CAL[story_bible_audit.md]
     D --> I[genre_contract_spec.md]

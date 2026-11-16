@@ -1,8 +1,8 @@
 ---
 name: novel-writing-craft
-description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), airtight plot hole prevention & logic auditing (Therefore/But causality rule, Setup & Payoff matrix, Why Don't They Just 4-Gates stress test, Story Bible & Knowledge State Continuity Ledgers), linguistic realism & character idiolects (Martin Joos 5 Registers, Register Shifting triggers, 6D Voice Fingerprints, Tagless Blind Test, James Wood's "Serious Noticing" and "Thisness", Socio-Economic Arithmetic of Scarcity, Institutional Friction), 3 Genre Playbooks (Romance/BL/Danmei, Thriller/Psychological Mystery, Fantasy/Progression/LitRPG), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, natural dialogue & language stylistics (Indonesian literary standard vs authentic colloquial lu-gue/slang, discourse particle grammar sih/kan/dong/deh, elimination of AI translationese and dead metaphors), quantitative pacing metrics (Word Count by Genre, 2,000–3,500 word sweet spot, Act Budgeting, 260 WPM reading telemetry, Qidian & Kindle retention analytics), neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions.
+description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), adaptive user intent calibration (6 Aesthetic Dials, 5-Minute Express vs 10-Dimension Master Intake, Dealbreaker & Anti-Trope Guardrails), 9 Master Genre Playbooks (Romance/BL/Danmei, Thriller/Psychological Mystery, Fantasy/Progression/LitRPG, Horror/Folk Dread, Sci-Fi/Cyberpunk, Romantasy/Werewolf, Historical/Palace Intrigue/Wuxia, Slice-of-Life/Cozy Drama, Crime Syndicate/Heist), airtight plot hole prevention & logic auditing (Therefore/But causality rule, Setup & Payoff matrix, Why Don't They Just 4-Gates stress test, Story Bible & Knowledge State Continuity Ledgers), linguistic realism & character idiolects (Martin Joos 5 Registers, Register Shifting triggers, 6D Voice Fingerprints, Tagless Blind Test, James Wood's "Serious Noticing" and "Thisness", Socio-Economic Arithmetic of Scarcity, Institutional Friction), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, natural dialogue & language stylistics (Indonesian literary standard vs authentic colloquial lu-gue/slang, discourse particle grammar sih/kan/dong/deh, elimination of AI translationese and dead metaphors), quantitative pacing metrics (Word Count by Genre, 2,000–3,500 word sweet spot, Act Budgeting, 260 WPM reading telemetry, Qidian & Kindle retention analytics), neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions.
 metadata:
-  version: "1.8.0"
+  version: "1.9.0"
   status: active
   domain: fiction-craft
   target_ai: universal
@@ -32,9 +32,10 @@ Activate this skill whenever the user asks to:
 ### Operating Modes:
 | Mode | Role | Primary Objective | Key Frameworks |
 |---|---|---|---|
+| `intent-calibrator` | Creative Intent Consultant | Interactive author onboarding, intake briefs, dial calibration | 6 Dials Matrix, Express/Master Intake Tracks, Anti-Trope Guardrails |
 | `architect` | Master Story Architect | Plot design, act structuring, beat calibration | Three-Act, Truby 22 Steps, Save the Cat, Act Word Budgeting |
 | `continuity-auditor` | Continuity & Logic Auditor | Plot hole detection, causality audit, knowledge tracking | "Therefore/But" Rule, Setup & Payoff Matrix, 4-Gates Test, Story Bible |
-| `genre-specialist` | Genre Lead / Script Doctor | Genre conventions, obligatory scenes, trope subversion | Romance/BL Playbook, Thriller Playbook, Progression Playbook |
+| `genre-specialist` | Genre Lead / Script Doctor | Genre conventions, obligatory scenes, trope subversion | 9 Master Genre Playbooks (Romance, Thriller, Fantasy, Horror, Sci-Fi, etc.) |
 | `profiler` | Character Psychologist | 3D Triad (Wound, Lie, Want, Need), voice design | Positive/Flat/Corruption Arcs, Linguistic Fingerprints & Sociolects |
 | `drafter` | Novelist (Scene Drafter) | Chapter drafting via Scene & Sequel, visceral showing | Palahniuk Submerged I, 5-Sense Calibration, 2,500-word target |
 | `editor` | Senior Developmental Editor | Pacing diagnosis, anti-slop sweep, subtext audit | Walter Murch Rule of Six, Zeigarnik Loops, Anti-Translationese CLI |
@@ -89,12 +90,15 @@ Drill down into domain reference modules as required by the current task:
 * **Thriller & Mystery Playbook:** Read [`references/14_genre_playbook_thriller_and_mystery.md`](references/14_genre_playbook_thriller_and_mystery.md) for Knox's Decalogue (Fair Play), Locked Room, Domestic Suspense, Unreliable Narrators, Ticking Clocks, and Hero at Mercy of Villain.
 * **Fantasy & Progression / Isekai Playbook:** Read [`references/15_genre_playbook_fantasy_and_progression.md`](references/15_genre_playbook_fantasy_and_progression.md) for Quantified Dopamine Loops, Broken Underdog Synergies, Regression Qiyun, Face-Slapping (*打脸*), and Solved Boss Raids.
 * **Plot Hole Prevention & Logic Auditing:** Read [`references/16_plothole_prevention_and_logic_auditing.md`](references/16_plothole_prevention_and_logic_auditing.md) for 7 Plot Hole Taxonomies, Therefore/But Causality Engine, Setup & Payoff Matrix (Chekhov's Gun Lifecycle), Why Don't They Just 4-Gates Stress-Test, and 6-Layer Developmental Editor Checklist.
-* **[NEW] Linguistic Realism, Idiolects & Verisimilitude:** Read [`references/17_linguistic_realism_idiolects_and_verisimilitude.md`](references/17_linguistic_realism_idiolects_and_verisimilitude.md) for Martin Joos's 5 Registers, Code-Switching & Register Shifting Triggers, 6-Dimensional Character Idiolect Profiling (Voice Fingerprints), James Wood's "Serious Noticing" (*Thisness / Haecceity*), Socio-Economic Arithmetic of Scarcity, Institutional Friction, and the Tagless Blind Test.
+* **Linguistic Realism, Idiolects & Verisimilitude:** Read [`references/17_linguistic_realism_idiolects_and_verisimilitude.md`](references/17_linguistic_realism_idiolects_and_verisimilitude.md) for Martin Joos's 5 Registers, Code-Switching & Register Shifting Triggers, 6-Dimensional Character Idiolect Profiling (Voice Fingerprints), James Wood's "Serious Noticing" (*Thisness / Haecceity*), Socio-Economic Arithmetic of Scarcity, Institutional Friction, and the Tagless Blind Test.
+* **[NEW] Expanded Genre Playbooks (The 9 Master Categories):** Read [`references/18_expanded_genre_playbooks_master_matrix.md`](references/18_expanded_genre_playbooks_master_matrix.md) for specialized contracts across **Folk Horror & Supernatural**, **Sci-Fi & Cyberpunk**, **Romantasy & Werewolf/Alpha**, **Historical & Ancient Palace Intrigue/Wuxia**, **Slice of Life & Cozy Fiction**, and **Crime Syndicate & Heist**.
+* **[NEW] User Intent Calibration & Adaptive Intake:** Read [`references/19_user_intent_calibration_and_adaptive_intake.md`](references/19_user_intent_calibration_and_adaptive_intake.md) for the 6 Creative Calibration Dials (Tone, Pacing, Realism, Commercial Platform, Ratings, Ending), 5-Minute Express vs. 10-Dimension Master Architect Tracks, and Anti-Trope / Dealbreaker Enforcement.
 
 ---
 
 ## 4. Ready-to-Use Templates
 
+* Creative Intent & Novel Project Brief: [`templates/creative_intent_and_project_brief_template.md`](templates/creative_intent_and_project_brief_template.md)
 * Character Profile: [`templates/character_dossier_template.md`](templates/character_dossier_template.md)
 * Character Linguistic Fingerprint & Idiolect: [`templates/character_linguistic_fingerprint_template.md`](templates/character_linguistic_fingerprint_template.md)
 * Chapter Outline: [`templates/chapter_outline_template.md`](templates/chapter_outline_template.md)
@@ -108,6 +112,7 @@ Drill down into domain reference modules as required by the current task:
 ## 5. Diagnostic Quality Gate (Pre-Finalization Checklist)
 
 Before concluding any chapter or scene draft, execute this verification pass:
+- [ ] **Author Intent & Guardrail Check:** Are all user-specified Must-Haves included, and are all Dealbreakers/Banned Tropes strictly absent?
 - [ ] **Plot Hole / Logic Check:** Do all beats connect via *"Therefore"* or *"But"*? Does any character act beneath their intelligence (Idiot Plot)?
 - [ ] **Epistemic Source Validated:** Does the POV character have a verified in-story source for every secret or piece of data they speak or act upon?
 - [ ] **Spatial & Continuity Check:** Are travel times realistic? Are physical injuries and carried inventory consistent with previous chapters?

@@ -1,8 +1,8 @@
 ---
 name: novel-writing-craft
-description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions (including Danmei, BL, Thriller, Fantasy, Sci-Fi).
+description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, quantitative pacing metrics (Word Count by Genre, 2,000–3,500 word sweet spot, Act Budgeting, 260 WPM reading telemetry, Qidian & Kindle retention analytics), neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions (including Danmei, BL, Thriller, Fantasy, Sci-Fi).
 metadata:
-  version: "1.3.1"
+  version: "1.4.0"
   status: active
   domain: fiction-craft
   target_ai: universal
@@ -19,6 +19,7 @@ Whether pasted into **Google Gemini (Gems)**, **ChatGPT (Custom GPTs / System Pr
 
 Activate this skill whenever the user asks to:
 * Design, plot, outline, or brainstorm a novel, screenplay, webnovel, or short story.
+* Calculate word count budgets, chapter allocations, reading durations, or serial release schedules.
 * Develop 3D characters, psychological wounds, moral flaws, or distinct linguistic dialogue voices.
 * Write, draft, or expand chapters and scenes with cinematic pacing and visceral sensory immersion.
 * Critique, diagnose, or line-edit existing fiction prose against professional publication standards.
@@ -26,9 +27,9 @@ Activate this skill whenever the user asks to:
 ### Operating Modes:
 | Mode | Role | Primary Objective | Key Frameworks |
 |---|---|---|---|
-| `architect` | Master Story Architect | Plot design, act structuring, beat calibration | Three-Act, Truby 22 Steps, Save the Cat, Story Circle |
+| `architect` | Master Story Architect | Plot design, act structuring, beat calibration | Three-Act, Truby 22 Steps, Save the Cat, Act Word Budgeting |
 | `profiler` | Character Psychologist | 3D Triad (Wound, Lie, Want, Need), voice design | Positive/Flat/Corruption Arcs, Linguistic Fingerprints |
-| `drafter` | Novelist (Scene Drafter) | Chapter drafting via Scene & Sequel, visceral showing | Palahniuk Submerged I, 5-Sense Calibration, Iceberg |
+| `drafter` | Novelist (Scene Drafter) | Chapter drafting via Scene & Sequel, visceral showing | Palahniuk Submerged I, 5-Sense Calibration, 2,500-word target |
 | `editor` | Senior Developmental Editor | Pacing diagnosis, anti-slop sweep, subtext audit | Walter Murch Rule of Six, Zeigarnik Loops, Pacing CLI |
 
 ---
@@ -46,7 +47,7 @@ AI models default to purple prose, emotional labeling, and moralizing conclusion
 
 ---
 
-## 3. Progressive Disclosure: Context Pointers (10 Deep Modules)
+## 3. Progressive Disclosure: Context Pointers (11 Deep Modules)
 
 Drill down into domain reference modules as required by the current task:
 
@@ -60,6 +61,7 @@ Drill down into domain reference modules as required by the current task:
 * **Neuroscience of Suspense:** Read [`references/08_neuroscience_of_storytelling_and_suspense.md`](references/08_neuroscience_of_storytelling_and_suspense.md) for Narrative Transportation, the Curiosity Gap, the Zeigarnik Effect (Open Loops), and Dopamine Cycles.
 * **Worldbuilding & Magic Systems:** Read [`references/09_worldbuilding_and_magic_systems.md`](references/09_worldbuilding_and_magic_systems.md) for Sanderson's 3 Laws of Magic/Systems, Promise-Progress-Payoff, and Hemingway's Iceberg Principle.
 * **Literary Mastery & Stylistics:** Read [`references/10_literary_mastery_and_prose_stylistics.md`](references/10_literary_mastery_and_prose_stylistics.md) for Palahniuk's Submerged "I", Stephen King's Adverb Discipline, George Saunders' Gas Station Rule, and Le Guin's Language Cadence.
+* **Quantitative Pacing & Word Count Benchmarks:** Read [`references/11_quantitative_word_count_and_pacing_metrics.md`](references/11_quantitative_word_count_and_pacing_metrics.md) for Chapter Length Targets (2,000–3,500 word sweet spot), Novel Word Count by Genre, 25-50-25 Act Budgeting, 260 WPM reading telemetry, and Qidian/Kindle DNF retention curves.
 
 ---
 
@@ -68,6 +70,7 @@ Drill down into domain reference modules as required by the current task:
 * Character Profile: [`templates/character_dossier_template.md`](templates/character_dossier_template.md)
 * Chapter Outline: [`templates/chapter_outline_template.md`](templates/chapter_outline_template.md)
 * Scene Beat Sheet: [`templates/scene_beat_sheet_template.md`](templates/scene_beat_sheet_template.md)
+* Word Count & Act Budget Calculator: [`templates/word_count_and_act_budget_calculator.md`](templates/word_count_and_act_budget_calculator.md)
 * Pitch & Logline: [`templates/book_proposal_pitch_template.md`](templates/book_proposal_pitch_template.md)
 
 ---
@@ -75,6 +78,7 @@ Drill down into domain reference modules as required by the current task:
 ## 5. Diagnostic Quality Gate (Pre-Finalization Checklist)
 
 Before concluding any chapter or scene draft, execute this verification pass:
+- [ ] **Word Count Check:** Is the chapter within the optimal reading window (2,000–3,500 words, ~10–14 mins)? If over 4,000 words, has a visual/scene break been provided?
 - [ ] **Hook Check:** Does the opening line immediately introduce tension, physical action, or intrigue?
 - [ ] **Life Value Shift:** Has the scene shifted from $+$ to $-$ (or $-$ to $+$)? If no value shifted, the scene is dead.
 - [ ] **POV Lock:** Is there any head-hopping or narration of things the POV character cannot perceive?

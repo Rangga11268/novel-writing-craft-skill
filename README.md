@@ -8,8 +8,9 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://github.com/Rangga11268/novel-writing-craft-skill/actions"><img src="https://img.shields.io/badge/CI-Passing-success.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" /></a>
     <a href="#-universal-ai-compatibility"><img src="https://img.shields.io/badge/Universal%20AI-Gemini%20%7C%20ChatGPT%20%7C%20Claude%20%7C%20DeepSeek-purple.svg?style=for-the-badge" alt="Universal AI" /></a>
-    <a href="#-the-16-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-16%20Deep%20Guides-amber.svg?style=for-the-badge" alt="16 Modules" /></a>
+    <a href="#-the-17-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-17%20Deep%20Guides-amber.svg?style=for-the-badge" alt="17 Modules" /></a>
     <a href="#-narrative-logic--plot-hole-prevention"><img src="https://img.shields.io/badge/Continuity-Zero%20Plot%20Holes-teal.svg?style=for-the-badge" alt="Zero Plot Holes" /></a>
+    <a href="#-linguistic-realism-character-idiolects--world-verisimilitude"><img src="https://img.shields.io/badge/Dialogue-Living%20Voices-blue.svg?style=for-the-badge" alt="Living Voices" /></a>
     <a href="#-genre-playbooks-top-3-categories"><img src="https://img.shields.io/badge/Playbooks-Romance%20%7C%20Thriller%20%7C%20Fantasy-indigo.svg?style=for-the-badge" alt="Genre Playbooks" /></a>
     <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Prose%20Quality-Anti--AI--Slop-red.svg?style=for-the-badge" alt="Anti Slop" /></a>
   </p>
@@ -89,6 +90,38 @@ Module 16 and Template 6 equip the engine with an unyielding developmental audit
 
 ---
 
+## 🎙️ Linguistic Realism, Character Idiolects & World Verisimilitude
+
+Generic AI fiction makes all characters sound identical—speaking either in dry textbook Indonesian (*"Ini tidak membuat akal sehat"*) or unnatural sitcom banter.
+
+Module 17 and Template 7 introduce a sociolinguistic engine based on **Martin Joos’s 5 Registers**, **Robert McKee's Tactical Subtext**, and **James Wood's "Serious Noticing" (*Thisness / Haecceity*)**:
+
+```
+[ FROZEN / RITUAL ]          Legal oaths, statutes, religious liturgy
+       │
+[ FORMAL / DINAS ]           Boardrooms, rectories, police interrogations
+       │
+[ KONSULTATIF / PROFESIONAL] Faculty-student, research collaboration, work transactions
+       │
+[ KASUAL / GAUL ]            Hallways, canteens, peer slang (lu-gue, sih, kan, deh)
+       │
+[ INTIM / PRIVAT ]           Whispered confessions, domestic warmth, raw profanity
+```
+
+* **The 6-Dimensional Voice Fingerprint (Idiolect):**
+  1. *Syntactic Architecture & MLU:* Mean Length of Utterance (staccato 3-word punch vs. multi-clause academic subordination).
+  2. *Sensory & Lexical Bias:* Metaphors drawn from programming/hardware vs. street survival vs. old-money entitlement.
+  3. *Cadence & Prosody:* Percussive beats vs. smooth legato vs. hesitant caesuras.
+  4. *Discourse Markers & Particles:* Character-specific verbal anchors (*"secara teknis"*, *"santai kali"*, *"kan"*).
+  5. *Tactical Defense Subtext (McKee):* Verbal actions (*stonewalling, provoking, placating, disarming*).
+  6. *Code-Switching Thresholds:* Exact psychological triggers that cause characters to shift language or register.
+* **Deep Verisimilitude (World Realism):**
+  * *Arithmetic of Scarcity:* Underdog characters navigate daily life calculating microbus fares, soldering broken charging cables, and rationing generic medicine.
+  * *Institutional & Technical Texture:* Real operational friction—fingerprint turnstiles, server fans humming, terminal Neovim compilation errors, bureaucratic visa bottlenecks.
+* **The Tagless Blind Test:** If all speaker tags (*"katanya", "ucapnya"*) are deleted, readers can instantly identify each speaker purely from rhythm, vocabulary, and tactical subtext.
+
+---
+
 ## 🌐 Universal AI Compatibility
 
 You don't need to be a developer or run code agents to use this. You can plug this skill directly into your everyday AI chat platform:
@@ -124,7 +157,7 @@ You don't need to be a developer or run code agents to use this. You can plug th
 
 ## 🏛️ Architecture Overview
 
-Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 16 specialized domain modules on demand:
+Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 17 specialized domain modules on demand:
 
 ```
 novel-writing-craft-skill/
@@ -133,7 +166,7 @@ novel-writing-craft-skill/
 │   └── logo.png                        # Rendered 512px high-res asset
 ├── .github/workflows/
 │   └── validate-skill.yml              # Automated CI/CD diagnostic tester
-├── references/                         # The 16 In-Depth Craft Modules
+├── references/                         # The 17 In-Depth Craft Modules
 │   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat 15 Beats, 7-Point, Story Grid
 │   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie Believed, Want vs Need, 4 Arcs
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction-Dilemma-Decision
@@ -149,14 +182,16 @@ novel-writing-craft-skill/
 │   ├── 13_genre_playbook_romance_and_bl.md # Romance & BL/Danmei Playbook (HEA, Crematorium, ABO, 8 Scenes)
 │   ├── 14_genre_playbook_thriller_and_mystery.md # Thriller & Mystery Playbook (Fair Play, Locked Room, Cat & Mouse)
 │   ├── 15_genre_playbook_fantasy_and_progression.md # Fantasy & Progression/Isekai (Quantified Growth, Face-Slapping)
-│   └── 16_plothole_prevention_and_logic_auditing.md # [NEW] Plot Hole Taxonomies, Causality Auditing & 4-Gates Test
+│   ├── 16_plothole_prevention_and_logic_auditing.md # Plot Hole Taxonomies, Causality Auditing & 4-Gates Test
+│   └── 17_linguistic_realism_idiolects_and_verisimilitude.md # [NEW] 5 Registers, Code-Switching, 6D Voice Fingerprints & Sensory Thisness
 ├── templates/                          # Production-Ready Plotting Cards & Ledgers
 │   ├── character_dossier_template.md   # 3D character psychological spec
+│   ├── character_linguistic_fingerprint_template.md # [NEW] 6D Voice Fingerprint & Register Modulation Spec
 │   ├── chapter_outline_template.md     # Scene & Sequel chapter blueprint
 │   ├── scene_beat_sheet_template.md    # 5-beat micro-scene rhythm
 │   ├── word_count_and_act_budget_calculator.md # Mathematical act & pacing budget worksheet
 │   ├── book_proposal_pitch_template.md # Logline, comps & premise pitch
-│   └── story_bible_and_continuity_ledger.md # [NEW] Master timeline, spatial, epistemic & Chekhov gun tracker
+│   └── story_bible_and_continuity_ledger.md # Master timeline, spatial, epistemic & Chekhov gun tracker
 ├── scripts/
 │   └── check_pacing.py                 # Telemetry CLI for word counts, reading duration, dialogue ratios & translationese detection
 ├── SKILL.md                            # Universal AI Entrypoint

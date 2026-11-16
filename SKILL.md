@@ -1,8 +1,8 @@
 ---
 name: novel-writing-craft
-description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), airtight plot hole prevention & logic auditing (Therefore/But causality rule, Setup & Payoff matrix, Why Don't They Just 4-Gates stress test, Story Bible & Knowledge State Continuity Ledgers), 3 Genre Playbooks (Romance/BL/Danmei, Thriller/Psychological Mystery, Fantasy/Progression/LitRPG), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, natural dialogue & language stylistics (Indonesian literary standard vs authentic colloquial lu-gue/slang, discourse particle grammar sih/kan/dong/deh, elimination of AI translationese and dead metaphors), quantitative pacing metrics (Word Count by Genre, 2,000–3,500 word sweet spot, Act Budgeting, 260 WPM reading telemetry, Qidian & Kindle retention analytics), neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions.
+description: Universal fiction and novel writing craft engine for ANY AI (Google Gemini, ChatGPT, Claude.ai, DeepSeek, Antigravity, Cursor, and Local LLMs). Covers advanced story architecture (Three-Act, Save the Cat! 15 Beats, John Truby 22 Steps, Dan Harmon Story Circle, Story Grid 5 Commandments), airtight plot hole prevention & logic auditing (Therefore/But causality rule, Setup & Payoff matrix, Why Don't They Just 4-Gates stress test, Story Bible & Knowledge State Continuity Ledgers), linguistic realism & character idiolects (Martin Joos 5 Registers, Register Shifting triggers, 6D Voice Fingerprints, Tagless Blind Test, James Wood's "Serious Noticing" and "Thisness", Socio-Economic Arithmetic of Scarcity, Institutional Friction), 3 Genre Playbooks (Romance/BL/Danmei, Thriller/Psychological Mystery, Fantasy/Progression/LitRPG), 3D character psychology (The Wound, The Lie, Want vs Need, 4 Character Arcs), Scene & Sequel mechanics, natural dialogue & language stylistics (Indonesian literary standard vs authentic colloquial lu-gue/slang, discourse particle grammar sih/kan/dong/deh, elimination of AI translationese and dead metaphors), quantitative pacing metrics (Word Count by Genre, 2,000–3,500 word sweet spot, Act Budgeting, 260 WPM reading telemetry, Qidian & Kindle retention analytics), neuroscience of suspense (Curiosity Gaps, Zeigarnik Effect, Narrative Transportation), cinematic pacing (Hitchcock Suspense, Walter Murch Rule of Six), visceral Show Don't Tell (Palahniuk Submerged I, Sensory Palettes), subtextual dialogue combat, system design (Sanderson 3 Laws, Promise-Progress-Payoff), and genre conventions.
 metadata:
-  version: "1.7.0"
+  version: "1.8.0"
   status: active
   domain: fiction-craft
   target_ai: universal
@@ -88,13 +88,15 @@ Drill down into domain reference modules as required by the current task:
 * **Romance & BL / Danmei Playbook:** Read [`references/13_genre_playbook_romance_and_bl.md`](references/13_genre_playbook_romance_and_bl.md) for HEA contract, Enemies-to-lovers, Crematorium groveling, Omegaverse ABO, and 8 Obligatory Scenes.
 * **Thriller & Mystery Playbook:** Read [`references/14_genre_playbook_thriller_and_mystery.md`](references/14_genre_playbook_thriller_and_mystery.md) for Knox's Decalogue (Fair Play), Locked Room, Domestic Suspense, Unreliable Narrators, Ticking Clocks, and Hero at Mercy of Villain.
 * **Fantasy & Progression / Isekai Playbook:** Read [`references/15_genre_playbook_fantasy_and_progression.md`](references/15_genre_playbook_fantasy_and_progression.md) for Quantified Dopamine Loops, Broken Underdog Synergies, Regression Qiyun, Face-Slapping (*打脸*), and Solved Boss Raids.
-* **[NEW] Plot Hole Prevention & Logic Auditing:** Read [`references/16_plothole_prevention_and_logic_auditing.md`](references/16_plothole_prevention_and_logic_auditing.md) for 7 Plot Hole Taxonomies, Therefore/But Causality Engine, Setup & Payoff Matrix (Chekhov's Gun Lifecycle), Why Don't They Just 4-Gates Stress-Test, and 6-Layer Developmental Editor Checklist.
+* **Plot Hole Prevention & Logic Auditing:** Read [`references/16_plothole_prevention_and_logic_auditing.md`](references/16_plothole_prevention_and_logic_auditing.md) for 7 Plot Hole Taxonomies, Therefore/But Causality Engine, Setup & Payoff Matrix (Chekhov's Gun Lifecycle), Why Don't They Just 4-Gates Stress-Test, and 6-Layer Developmental Editor Checklist.
+* **[NEW] Linguistic Realism, Idiolects & Verisimilitude:** Read [`references/17_linguistic_realism_idiolects_and_verisimilitude.md`](references/17_linguistic_realism_idiolects_and_verisimilitude.md) for Martin Joos's 5 Registers, Code-Switching & Register Shifting Triggers, 6-Dimensional Character Idiolect Profiling (Voice Fingerprints), James Wood's "Serious Noticing" (*Thisness / Haecceity*), Socio-Economic Arithmetic of Scarcity, Institutional Friction, and the Tagless Blind Test.
 
 ---
 
 ## 4. Ready-to-Use Templates
 
 * Character Profile: [`templates/character_dossier_template.md`](templates/character_dossier_template.md)
+* Character Linguistic Fingerprint & Idiolect: [`templates/character_linguistic_fingerprint_template.md`](templates/character_linguistic_fingerprint_template.md)
 * Chapter Outline: [`templates/chapter_outline_template.md`](templates/chapter_outline_template.md)
 * Scene Beat Sheet: [`templates/scene_beat_sheet_template.md`](templates/scene_beat_sheet_template.md)
 * Story Bible & Continuity Ledger: [`templates/story_bible_and_continuity_ledger.md`](templates/story_bible_and_continuity_ledger.md)
@@ -113,6 +115,9 @@ Before concluding any chapter or scene draft, execute this verification pass:
 - [ ] **Genre Obligatory Scene Met:** Does this chapter fulfill its genre contract (e.g., Fair Play clue in Mystery, Proof of Sacrifice in Romance, Measurable Growth in Progression)?
 - [ ] **Word Count Check:** Is the chapter within the optimal reading window (2,000–3,500 words, ~10–14 mins)?
 - [ ] **Acoustic Read-Aloud Test:** Does dialogue sound like a living human speaking? Has all mechanical translationese ("membuat akal sehat", "menemukan dirinya") been purged?
+- [ ] **The Tagless Blind Test:** Can you obscure all dialogue tags and immediately identify each speaker by syntax, vocabulary, and rhythm?
+- [ ] **Register Congruence & Code-Switching:** Does dialogue register match social hierarchy, intimacy level, and bystander presence?
+- [ ] **Two "Thisness" Anchors:** Does the scene contain at least two idiosyncratic, tactile sensory details reflecting physical and socio-economic reality?
 - [ ] **Sociolect Consistency:** Do characters speak in their proper social register (urban slang, academic, or working-class survival)?
 - [ ] **Life Value Shift:** Has the scene shifted from $+$ to $-$ (or $-$ to $+$)? If no value shifted, the scene is dead.
 - [ ] **POV Lock:** Is there any head-hopping or narration of things the POV character cannot perceive?

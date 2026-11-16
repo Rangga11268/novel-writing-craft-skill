@@ -59,19 +59,26 @@ The AI **MUST** enforce these strict negative constraints:
    * Never use *"di penghujung hari"* $\rightarrow$ use *"pada akhirnya"* or *"biar bagaimanapun"*.
    * Never use *"mata mereka terkunci"* $\rightarrow$ use *"tatapan mereka bersirobok"* or *"pandangan mereka bertemu"*.
    * Never use *"tidak bisa menahan diri untuk tidak..."* $\rightarrow$ use *"tak kuasa menahan..."*.
+   * Never use *"menghembuskan napas yang tak disadari ia tahan"* $\rightarrow$ use *"menghela napas lega"*.
    * Purge pseudo-poetic clichés: *tapestri takdir, relung jiwa terdalam, simfoni keheningan, tarian bayang-bayang*.
 7. **Natural Dialogue vs. Literary Narrative:**
    * Narrative uses flowing literary standard (*me-, ber-, di-, ter-*, precise imagery).
    * Dialogue uses authentic conversational register (*lu-gue, aku-kamu*, elipsis, *nge-, -in*).
    * Partikel wacana (*sih, kan, dong, deh, kok*) must be used functionally and sparingly (max 1 per clause), never spammed.
-8. **No Melodramatic Dialogue Tags:** Eliminate words like *"ia mendesis", "ia mencemooh", "ia merintih"*. Default to neutral tags (*"katanya", "tanyanya"*) or ground the line in physical **Action Beats**.
-9. **Strict POV Discipline (Anti-Head-Hopping):** In 1st Person or 3rd Person Limited, the camera remains permanently locked behind the POV character's retinas. Never describe what another character feels, thinks, or looks like when out of view.
-10. **No Moralizing / Essayistic Summaries:** Never conclude a scene with a philosophical summary (*"Dan malam itu ia belajar..."*). End on a hanging sensory detail, a dilemma, or an irreversible action.
-11. **No "As You Know, Bob" Infodumping:** Characters must never explain shared backstory to each other purely to inform the reader.
+8. **Anti-Subtitle & Anti-Robot Dialogue Discipline (MANDATORY DEFAULT):**
+   * **Banned Subtitle / Anime Phrasing:** Never translate foreign conversational idioms literally into dialogue (e.g., ❌ *"Lu baru saja menghindar dari tangan gue?"* $\rightarrow$ ✅ *"Belagu amat lu, nyingkir pas gue sentuh"*).
+   * **Banned Theatrical / Bookish Phrasing:** Never write dictionary-style single-word refusals (❌ *"Tolak."* / *"Saya menolak."* $\rightarrow$ ✅ *"Ogah."* / *"Gak sudi."* / *"Gak bakal."*).
+   * **Banned Robotic Geek Speak in Dialogue:** Smart/geek characters must NEVER talk like an academic paper or walking textbook under stress (❌ *"Cengkeraman ini melanggar ruang batas fisik"* $\rightarrow$ ✅ *"Lepas. Sakit."*; ❌ *"Dan itu tidak membuatmu lebih pintar satu bit pun"* $\rightarrow$ ✅ *"Dan itu gak bikin lu lebih pinter dari gue"*).
+   * **Banned Pastiche Honorifics:** No fantasy clan terms in real-world urban settings (❌ *"Bukan pesuruh klan Abimana"* $\rightarrow$ ✅ *"Bukan babu lu atau keluarga lu"*).
+   * **Register Consistency in Conflict:** Peers in urban conflict NEVER use polite formal *"Saya - Kamu"*. Use *lu-gue* or omit pronouns entirely.
+9. **No Melodramatic Dialogue Tags:** Eliminate words like *"ia mendesis", "ia mencemooh", "ia merintih"*. Default to neutral tags (*"katanya", "tanyanya"*) or ground the line in physical **Action Beats**.
+10. **Strict POV Discipline (Anti-Head-Hopping):** In 1st Person or 3rd Person Limited, the camera remains permanently locked behind the POV character's retinas. Never describe what another character feels, thinks, or looks like when out of view.
+11. **No Moralizing / Essayistic Summaries:** Never conclude a scene with a philosophical summary (*"Dan malam itu ia belajar..."*). End on a hanging sensory detail, a dilemma, or an irreversible action.
+12. **No "As You Know, Bob" Infodumping:** Characters must never explain shared backstory to each other purely to inform the reader.
 
 ---
 
-## 3. Progressive Disclosure: Context Pointers (16 Deep Modules)
+## 3. Progressive Disclosure: Context Pointers (20 Deep Modules)
 
 Drill down into domain reference modules as required by the current task:
 

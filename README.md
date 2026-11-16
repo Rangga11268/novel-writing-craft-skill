@@ -8,11 +8,11 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://github.com/Rangga11268/novel-writing-craft-skill/actions"><img src="https://img.shields.io/badge/CI-Passing-success.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" /></a>
     <a href="#-universal-ai-compatibility"><img src="https://img.shields.io/badge/Universal%20AI-Gemini%20%7C%20ChatGPT%20%7C%20Claude%20%7C%20DeepSeek-purple.svg?style=for-the-badge" alt="Universal AI" /></a>
-    <a href="#-the-20-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-20%20Deep%20Guides-amber.svg?style=for-the-badge" alt="20 Modules" /></a>
+    <a href="#-the-21-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-21%20Deep%20Guides-amber.svg?style=for-the-badge" alt="21 Modules" /></a>
     <a href="#-the-9-master-genre-playbooks"><img src="https://img.shields.io/badge/Playbooks-9%20Master%20Genres-indigo.svg?style=for-the-badge" alt="9 Master Genres" /></a>
+    <a href="#-nusantara-bestseller-craft-tere-liye--js-khairen"><img src="https://img.shields.io/badge/Bestseller-Tere%20Liye%20%26%20JS%20Khairen-orange.svg?style=for-the-badge" alt="Tere Liye & JS Khairen" /></a>
     <a href="#-multilingual-prose-humanizer--anti-ai-tells"><img src="https://img.shields.io/badge/Humanizer-Zero%20AI%20Slop-teal.svg?style=for-the-badge" alt="Zero AI Slop" /></a>
-    <a href="#-user-intent-calibration--adaptive-intake"><img src="https://img.shields.io/badge/Adaptive%20Intake-100%25%20Custom-emerald.svg?style=for-the-badge" alt="Adaptive Intake" /></a>
-    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Release-v2.0.0-rose.svg?style=for-the-badge" alt="v2.0.0" /></a>
+    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Release-v2.1.0-rose.svg?style=for-the-badge" alt="v2.1.0" /></a>
   </p>
 </div>
 
@@ -161,6 +161,34 @@ Inspired by the rigorous linguistic mechanics of `humanizer-indonesia` and conte
 
 ---
 
+## 🇮🇩 Nusantara Bestseller Craft: Tere Liye & J.S. Khairen Engine
+
+To capture the emotional power and unputdownable velocity of Indonesia’s top mega-bestselling authors, **v2.1.0** introduces a dedicated craft synthesis module ([Module 21](references/21_bestseller_craft_tere_liye_and_js_khairen.md)):
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                   TERE LIYE x J.S. KHAIREN SYNTHESIS                   │
+├─────────────────────┬──────────────────────────────────────────────────┤
+│ 1. Zero-Friction    │ S-V-O clarity; prose as transparent glass        │
+│ 2. Ticking-Clock    │ Moving lore; cliffhanger micro-arcs every chapter│
+│ 3. Trio Dynamics    │ Compass (Moral) + Dynamo (Action) + Chaos Genius │
+│ 4. Gritty Satire    │ Kampus UDEL, Sandwich Generation, financial dread│
+│ 5. Filial Gut-Punch │ Dompet Ayah Sepatu Ibu; the mutual merantau lie  │
+│ 6. Ikhlas & Takdir  │ Radical acceptance & courage over easy triumphs  │
+└─────────────────────┴──────────────────────────────────────────────────┘
+```
+
+* **Tere Liye's High-Velocity Architecture:**
+  * *Zero-Friction Prose:* Strips purple prose and abstract lecturing. Employs everyday grounded metaphors (*"Cinta itu seperti air hujan..."*).
+  * *The Balanced Trio Engine:* The Compass (Raib / moral core) $+$ The Dynamo (Seli / kinetic heart) $+$ The Contrarian (Ali / chaotic slacker genius).
+  * *Moving Lore:* Worldbuilding explained strictly while running, escaping, or under imminent deadline pressure.
+* **J.S. Khairen's Gritty Youth Realism:**
+  * *Biting Social Satire:* Confronting predatory campus diplomas (*Sarjana Kertas*), unpaid internships, and the economic panic of youth through gallows humor.
+  * *The Filial Gut-Punch:* Grounding the plot in parental sacrifice—the father's peeling wallet stuffed with pawnshop slips, the mother's thrice-glued shoes, and the heartbreaking mutual lie of *anak rantau*.
+  * *Nusantara High-Concept:* Fusing indigenous cultural rites (Sumba Pasola, Minangkabau clan laws) with adrenaline-pumping speculative scenarios (*Melangkah*).
+
+---
+
 ## 🌐 Universal AI Compatibility
 
 You don't need to be a developer or run code agents to use this. You can plug this skill directly into your everyday AI chat platform:
@@ -196,7 +224,7 @@ You don't need to be a developer or run code agents to use this. You can plug th
 
 ## 🏛️ Architecture Overview
 
-Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 20 specialized domain modules on demand:
+Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 21 specialized domain modules on demand:
 
 ```
 novel-writing-craft-skill/
@@ -205,7 +233,7 @@ novel-writing-craft-skill/
 │   └── logo.png                        # Rendered 512px high-res asset
 ├── .github/workflows/
 │   └── validate-skill.yml              # Automated CI/CD diagnostic tester
-├── references/                         # The 20 In-Depth Craft Modules
+├── references/                         # The 21 In-Depth Craft Modules
 │   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat 15 Beats, 7-Point, Story Grid
 │   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie Believed, Want vs Need, 4 Arcs
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction-Dilemma-Decision
@@ -225,10 +253,11 @@ novel-writing-craft-skill/
 │   ├── 17_linguistic_realism_idiolects_and_verisimilitude.md # 5 Registers, Code-Switching, 6D Voice Fingerprints & Sensory Thisness
 │   ├── 18_expanded_genre_playbooks_master_matrix.md # 6 Extra Playbooks: Horror, Sci-Fi, Romantasy, Palace/Wuxia, Slice-of-Life, Heist
 │   ├── 19_user_intent_calibration_and_adaptive_intake.md # 6 Creative Sliders, Express vs Master Intake, Anti-Trope Guardrails
-│   └── 20_multilingual_humanizer_and_anti_ai_tells.md # [NEW] Multilingual Humanizer, Anti-Kalke Dictionary, Connector Bloat & Metronome Breaks
+│   ├── 20_multilingual_humanizer_and_anti_ai_tells.md # Multilingual Humanizer, Anti-Kalke Dictionary, Connector Bloat & Metronome Breaks
+│   └── 21_bestseller_craft_tere_liye_and_js_khairen.md # [NEW] Zero-Friction Prose, Ticking Clocks, Trio Dynamics, Gritty Youth Satire & Filial Gut-Punches
 ├── templates/                          # Production-Ready Plotting Cards & Ledgers
 │   ├── creative_intent_and_project_brief_template.md # Comprehensive Author Onboarding & Intent Brief
-│   ├── humanizer_multilingual_audit_card.md # [NEW] Diagnostic Quality Gate for Humanizer Auditing
+│   ├── humanizer_multilingual_audit_card.md # Diagnostic Quality Gate for Humanizer Auditing
 │   ├── character_dossier_template.md   # 3D character psychological spec
 │   ├── character_linguistic_fingerprint_template.md # 6D Voice Fingerprint & Register Modulation Spec
 │   ├── chapter_outline_template.md     # Scene & Sequel chapter blueprint

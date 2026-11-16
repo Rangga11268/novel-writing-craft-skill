@@ -5,11 +5,11 @@
 [![AI Agent Ready](https://img.shields.io/badge/AI%20Agent-Universal-brightgreen.svg)]()
 [![Compatible: Antigravity | Claude Code | Cursor](https://img.shields.io/badge/Compatible-Antigravity%20%7C%20Claude%20Code%20%7C%20Cursor-purple.svg)]()
 
-A master-level fiction and novel writing craft engine designed for AI Agents (Google Antigravity, Claude Code, Cursor, ChatGPT). It elevates AI from generating generic prose into a rigorous, industry-grade **Story Architect** and **Developmental Editor**.
+A master-level fiction and novel writing craft engine designed for AI Agents (Google Antigravity, Claude Code, Cursor, ChatGPT). It elevates AI from generating generic prose into a rigorous, industry-grade **Story Architect** and **Developmental Editor**, integrating cinematic masterclasses, neuroscience of suspense, and literary discipline.
 
 ---
 
-## 🌟 Repository Architecture
+## 🌟 Repository Architecture (10 Deep Craft Modules)
 
 ```
 novel-writing-craft-skill/
@@ -21,7 +21,11 @@ novel-writing-craft-skill/
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction
 │   ├── 04_visceral_prose_and_sensory.md    # Somatic showing, Anti-Telling
 │   ├── 05_dialogue_subtext_and_combat.md   # Iceberg theory & distinct voices
-│   └── 06_danmei_and_romance_tropes.md     # Huan Gong, Crematorium, Awakening
+│   ├── 06_danmei_and_romance_tropes.md     # Huan Gong, Crematorium, Awakening
+│   ├── 07_cinematic_storytelling_and_screenwriting.md # Truby 22 Steps, Harmon Circle, Hitchcock, Murch Rule of Six, Pixar
+│   ├── 08_neuroscience_of_storytelling_and_suspense.md # Narrative Transportation, Curiosity Gap, Zeigarnik Effect
+│   ├── 09_worldbuilding_and_magic_systems.md # Sanderson 3 Laws, Promise-Progress-Payoff, Hemingway Iceberg
+│   └── 10_literary_mastery_and_prose_stylistics.md # Palahniuk Submerged "I", King Adverbs, Saunders Gas Station
 ├── templates/                          # Ready-to-use plotting cards
 │   ├── character_dossier_template.md
 │   ├── chapter_outline_template.md
@@ -67,7 +71,7 @@ python scripts/check_pacing.py path/to/chapter.md
 Output includes:
 * Word count & dialogue-to-narrative ratio assessment
 * Over-narration / white-room syndrome alerts
-* Automatic detection of generic AI-slop telling patterns
+* Automatic detection of generic AI-slop telling patterns and thought verbs
 
 ---
 

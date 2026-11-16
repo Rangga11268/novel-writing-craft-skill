@@ -8,7 +8,8 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://github.com/Rangga11268/novel-writing-craft-skill/actions"><img src="https://img.shields.io/badge/CI-Passing-success.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" /></a>
     <a href="#-universal-ai-compatibility"><img src="https://img.shields.io/badge/Universal%20AI-Gemini%20%7C%20ChatGPT%20%7C%20Claude%20%7C%20DeepSeek-purple.svg?style=for-the-badge" alt="Universal AI" /></a>
-    <a href="#-the-15-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-15%20Deep%20Guides-amber.svg?style=for-the-badge" alt="15 Modules" /></a>
+    <a href="#-the-16-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-16%20Deep%20Guides-amber.svg?style=for-the-badge" alt="16 Modules" /></a>
+    <a href="#-narrative-logic--plot-hole-prevention"><img src="https://img.shields.io/badge/Continuity-Zero%20Plot%20Holes-teal.svg?style=for-the-badge" alt="Zero Plot Holes" /></a>
     <a href="#-genre-playbooks-top-3-categories"><img src="https://img.shields.io/badge/Playbooks-Romance%20%7C%20Thriller%20%7C%20Fantasy-indigo.svg?style=for-the-badge" alt="Genre Playbooks" /></a>
     <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Prose%20Quality-Anti--AI--Slop-red.svg?style=for-the-badge" alt="Anti Slop" /></a>
   </p>
@@ -58,6 +59,36 @@ Dedicated structural playbooks covering core promises, bestselling tropes, oblig
 
 ---
 
+## 🛡️ Narrative Logic & Plot Hole Prevention
+
+Unchecked generative models suffer from **narrative amnesia**: characters suddenly know things they never witnessed (*epistemic leakage*), dead characters reappear, magical or technological limits evaporate during climaxes (*convenient nerfing / deus ex machina*), and conflicts drag on purely because two adults refuse a 10-second phone call (*The Idiot Plot*).
+
+Module 16 and Template 6 equip the engine with an unyielding developmental auditing system:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│               THE 4-GATES LOGIC AUDIT & CAUSALITY ENGINE              │
+├───────────────────┬────────────────────────────────────────────────────┤
+│ 1. Causality Link │ Replace "AND THEN" with "THEREFORE / BUT" causality│
+│ 2. 4-Gates Test   │ Why don't they just call police / use magic / run? │
+│ 3. K-State Matrix │ Strict character knowledge tracking (No omniscience│
+│ 4. Chekhov Ledger │ Every gun placed must fire; no unearned payoffs    │
+└───────────────────┴────────────────────────────────────────────────────┘
+```
+
+* **7 Plot Hole Taxonomies Audited:**
+  1. **Causal Breaks:** Events occurring without prerequisite causes.
+  2. **Character & Motivational Ruptures:** Inexplicable personality or skill shifts to force a plot beat.
+  3. **Temporal Paradoxes & Spatial Warping:** Instantaneous travel or inconsistent calendar timelines.
+  4. **The Idiot Plot & Contrived Silence:** Forcing artificial misunderstanding where rational people would clarify in 10 seconds.
+  5. **Epistemic Telepathy:** Character $B$ acting upon private info known only to Character $A$ and reader.
+  6. **Magic / Tech Rule Inconsistency:** Violating established hard limits when the climax demands a spectacle.
+  7. **Unfired Guns & Orphaned Setups:** Clues or foreshadowed items introduced with fanfare that disappear without payoff.
+
+* **Master Continuity Ledger:** The included [`story_bible_and_continuity_ledger.md`](templates/story_bible_and_continuity_ledger.md) tracks Master Timelines, Spatial Constraints, the Character Epistemic Matrix (who knows what, when, and from whom), System Hard Limits, and Inventory tracking.
+
+---
+
 ## 🌐 Universal AI Compatibility
 
 You don't need to be a developer or run code agents to use this. You can plug this skill directly into your everyday AI chat platform:
@@ -93,7 +124,7 @@ You don't need to be a developer or run code agents to use this. You can plug th
 
 ## 🏛️ Architecture Overview
 
-Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 15 specialized domain modules on demand:
+Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 16 specialized domain modules on demand:
 
 ```
 novel-writing-craft-skill/
@@ -102,7 +133,7 @@ novel-writing-craft-skill/
 │   └── logo.png                        # Rendered 512px high-res asset
 ├── .github/workflows/
 │   └── validate-skill.yml              # Automated CI/CD diagnostic tester
-├── references/                         # The 15 In-Depth Craft Modules
+├── references/                         # The 16 In-Depth Craft Modules
 │   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat 15 Beats, 7-Point, Story Grid
 │   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie Believed, Want vs Need, 4 Arcs
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction-Dilemma-Decision
@@ -115,15 +146,17 @@ novel-writing-craft-skill/
 │   ├── 10_literary_mastery_and_prose_stylistics.md # Palahniuk Submerged "I", King Adverbs, Saunders Gas Station
 │   ├── 11_quantitative_word_count_and_pacing_metrics.md # Word count by genre, act budgeting, reading speed & telemetry
 │   ├── 12_indonesian_stylistics_and_dialogue_slang.md # Literary narrative vs colloquial lu-gue, particles & anti-translationese
-│   ├── 13_genre_playbook_romance_and_bl.md # [NEW] Romance & BL/Danmei Playbook (HEA, Crematorium, ABO, 8 Scenes)
-│   ├── 14_genre_playbook_thriller_and_mystery.md # [NEW] Thriller & Mystery Playbook (Fair Play, Locked Room, Cat & Mouse)
-│   └── 15_genre_playbook_fantasy_and_progression.md # [NEW] Fantasy & Progression/Isekai (Quantified Growth, Face-Slapping)
-├── templates/                          # Production-Ready Plotting Cards
+│   ├── 13_genre_playbook_romance_and_bl.md # Romance & BL/Danmei Playbook (HEA, Crematorium, ABO, 8 Scenes)
+│   ├── 14_genre_playbook_thriller_and_mystery.md # Thriller & Mystery Playbook (Fair Play, Locked Room, Cat & Mouse)
+│   ├── 15_genre_playbook_fantasy_and_progression.md # Fantasy & Progression/Isekai (Quantified Growth, Face-Slapping)
+│   └── 16_plothole_prevention_and_logic_auditing.md # [NEW] Plot Hole Taxonomies, Causality Auditing & 4-Gates Test
+├── templates/                          # Production-Ready Plotting Cards & Ledgers
 │   ├── character_dossier_template.md   # 3D character psychological spec
 │   ├── chapter_outline_template.md     # Scene & Sequel chapter blueprint
 │   ├── scene_beat_sheet_template.md    # 5-beat micro-scene rhythm
 │   ├── word_count_and_act_budget_calculator.md # Mathematical act & pacing budget worksheet
-│   └── book_proposal_pitch_template.md # Logline, comps & premise pitch
+│   ├── book_proposal_pitch_template.md # Logline, comps & premise pitch
+│   └── story_bible_and_continuity_ledger.md # [NEW] Master timeline, spatial, epistemic & Chekhov gun tracker
 ├── scripts/
 │   └── check_pacing.py                 # Telemetry CLI for word counts, reading duration, dialogue ratios & translationese detection
 ├── SKILL.md                            # Universal AI Entrypoint
@@ -140,12 +173,14 @@ novel-writing-craft-skill/
 flowchart LR
     A[User Prompt] --> B{Choose Mode}
     B -->|Plot Design & Budget| C[architect]
+    B -->|Continuity & Logic Audit| CA[continuity-auditor]
     B -->|Genre Specialization| D[genre-specialist]
     B -->|Character Psychology| E[profiler]
     B -->|Prose Execution| F[drafter]
     B -->|Diagnostic Audit| G[editor]
 
     C --> H[plot_outline.md]
+    CA --> CAL[story_bible_audit.md]
     D --> I[genre_contract_spec.md]
     E --> J[character_dossier.md]
     F --> K[Chapter_XX.md]

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-Pacing, Word Count, Telemetry & Anti-Translationese Diagnostic Checker for Novel Chapters.
-Analyzes word count, reading duration, dialogue ratios, and flags generic AI prose and translationese patterns.
+Pacing, Word Count, Telemetry & Multilingual Humanizer Diagnostic Checker for Novel Chapters.
+Analyzes word count, reading duration, dialogue ratios, sentence length variation (metronome check),
+and flags generic AI prose, translationese, connector bloat, and nominalization patterns.
 """
 
 import sys
 import re
+import math
 
 BANNED_TELL_PATTERNS = [
     r"dia merasa",
@@ -37,10 +39,20 @@ TRANSLATIONESE_SLOP = [
     (r"di penghujung hari", "Kalk 'at the end of the day' -> Ganti dengan 'pada akhirnya' / 'biar bagaimanapun'"),
     (r"mata mereka terkunci", "Kalk 'their eyes locked' -> Ganti dengan 'tatapan mereka bersirobok' / 'bertemu'"),
     (r"(?:tidak|tak) bisa menahan diri untuk tidak", "Kalk 'couldn't help but' -> Ganti dengan 'tak kuasa menahan'"),
+    (r"menghembuskan napas yang (?:tak|tidak) ia sadari", "Kalk 'breath he didn't know he was holding' -> Klise AI"),
+    (r"senyum tipis bermain di bibir", "Kalk 'a ghost of a smile played' -> Ganti dengan 'sudut bibir terangkat'"),
+    (r"keheningan yang memekakkan", "Kalk 'deafening silence' -> Ganti dengan 'senyap total'"),
     (r"tapestri takdir", "AI-slop cliché -> Ganti dengan detail indrawi konkret"),
     (r"relung (?:jiwa )?terdalam", "AI-slop cliché -> Ganti dengan respon somatik/fisik nyata"),
     (r"simfoni keheningan", "AI-slop cliché -> Ganti dengan suara akustik ruangan nyata"),
     (r"tarian bayang-bayang", "AI-slop cliché -> Ganti dengan kontras pencahayaan nyata"),
+]
+
+HUMANIZER_TELLS = [
+    (r"\b(?:bukan berarti|ini bukan berarti|hal ini bukan berarti)\b", "Penyangkalan antisipatif (Anticipatory denial) -> Nyatakan langsung secara positif"),
+    (r"\b(?:melakukan pengamatan|melakukan pemeriksaan|melakukan analisis|melakukan tatapan)\b", "Nominalisasi verba ringan -> Ganti dengan verba aktif langsung (menatap, memeriksa, menganalisis)"),
+    (r"\b(?:di sisi lain|oleh karena itu|selain itu|lebih lanjut|namun demikian)\b", "Konektor formal berlebih -> Bangun kohesi lewat repetisi kata kunci dan klitik -nya"),
+    (r"\b(?:testament to|rich tapestry|palpable tension|delve into)\b", "English AI cliché -> Replace with concrete sensory action"),
 ]
 
 def analyze_chapter(file_path):
@@ -63,14 +75,23 @@ def analyze_chapter(file_path):
     dialogue_words = sum(len(re.findall(r"\b\w+\b", d)) for d in dialogues)
     dialogue_ratio = (dialogue_words / total_words * 100) if total_words > 0 else 0
 
-    print("=" * 65)
-    print(" 📖 NOVEL CHAPTER PACING & STYLISTICS DIAGNOSTIC REPORT")
-    print("=" * 65)
+    # Sentence metrics (Sentence variation / Metronome check)
+    raw_sentences = [s.strip() for s in re.split(r'[.!?]+', content) if s.strip()]
+    sentence_lengths = [len(re.findall(r"\b\w+\b", s)) for s in raw_sentences if len(re.findall(r"\b\w+\b", s)) > 0]
+    
+    avg_sentence_len = sum(sentence_lengths) / len(sentence_lengths) if sentence_lengths else 0
+    variance = sum((x - avg_sentence_len) ** 2 for x in sentence_lengths) / len(sentence_lengths) if sentence_lengths else 0
+    std_dev_sentence_len = math.sqrt(variance)
+
+    print("=" * 68)
+    print(" 📖 NOVEL CHAPTER PACING & MULTILINGUAL HUMANIZER REPORT")
+    print("=" * 68)
     print(f"File                 : {file_path}")
     print(f"Total Words          : {total_words:,} words")
     print(f"Reading Time (Print) : ~{print_time_mins:.1f} minutes (@ 260 WPM)")
     print(f"Reading Time (Mobile): ~{mobile_time_mins:.1f} minutes (@ 220 WPM)")
     print(f"Dialogue Words       : {dialogue_words:,} words ({dialogue_ratio:.1f}%)")
+    print(f"Sentence Rhythms     : Avg {avg_sentence_len:.1f} words | StdDev {std_dev_sentence_len:.1f} words")
     
     # Chapter Length Assessment
     print("\n📏 Chapter Length & Cognitive Session Evaluation:")
@@ -92,6 +113,13 @@ def analyze_chapter(file_path):
     else:
         print("  ✅ Balanced narrative-to-dialogue ratio (15%–65%).")
 
+    # Rhythm Variation (Metronome Check)
+    print("\n🎵 Sentence Rhythm & Metronome Check:")
+    if std_dev_sentence_len < 6.0 and len(sentence_lengths) > 10:
+        print(f"  ⚠️ Low Rhythm Variation (StdDev: {std_dev_sentence_len:.1f} < 6.0). Sentences feel metronomic; mix short staccato bursts with long periodic sentences.")
+    else:
+        print(f"  ✅ Dynamic Rhythm Breathing (StdDev: {std_dev_sentence_len:.1f} >= 6.0). Healthy cadence variation.")
+
     # Anti-slop checks
     print("\n🔍 Checking for Banned AI-Slop & Abstract Telling Patterns:")
     slop_count = 0
@@ -108,7 +136,7 @@ def analyze_chapter(file_path):
             print(f"  ⚠️ Thought Verb ({len(matches)}x): '{pattern}' (Unpack into sensory action)")
 
     # Translationese & Slop checks
-    print("\n🌐 Checking for AI-Translationese & Pseudo-Poetic Clichés:")
+    print("\n🌐 Checking for AI-Translationese & Kalke:")
     trans_count = 0
     for pattern, advice in TRANSLATIONESE_SLOP:
         matches = re.findall(pattern, content, re.IGNORECASE)
@@ -116,12 +144,21 @@ def analyze_chapter(file_path):
             trans_count += len(matches)
             print(f"  🚨 Translationese / Slop ({len(matches)}x): '{pattern}' -> {advice}")
 
-    total_issues = slop_count + trans_count
+    # Humanizer tells (Nominalization, Connector bloat, Anticipatory negations)
+    print("\n🧬 Checking for Humanizer AI Tells (Connector bloat, Nominalizations, Negations):")
+    humanizer_issues = 0
+    for pattern, advice in HUMANIZER_TELLS:
+        matches = re.findall(pattern, content, re.IGNORECASE)
+        if matches:
+            humanizer_issues += len(matches)
+            print(f"  ⚡ AI Tell ({len(matches)}x): '{pattern}' -> {advice}")
+
+    total_issues = slop_count + trans_count + humanizer_issues
     if total_issues == 0:
-        print("  ✅ Clean! No banned AI-slop, thought verbs, or translationese detected.")
+        print("  ✅ Pristine Human Prose! No banned AI-slop, thought verbs, translationese, or connector bloat detected.")
     else:
-        print(f"\n⚠️ Total issues flagged: {total_issues}. Please revise following references/12_indonesian_stylistics_and_dialogue_slang.md")
-    print("=" * 65)
+        print(f"\n⚠️ Total issues flagged: {total_issues}. Please revise following references/20_multilingual_humanizer_and_anti_ai_tells.md")
+    print("=" * 68)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

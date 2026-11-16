@@ -8,11 +8,11 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://github.com/Rangga11268/novel-writing-craft-skill/actions"><img src="https://img.shields.io/badge/CI-Passing-success.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" /></a>
     <a href="#-universal-ai-compatibility"><img src="https://img.shields.io/badge/Universal%20AI-Gemini%20%7C%20ChatGPT%20%7C%20Claude%20%7C%20DeepSeek-purple.svg?style=for-the-badge" alt="Universal AI" /></a>
-    <a href="#-the-19-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-19%20Deep%20Guides-amber.svg?style=for-the-badge" alt="19 Modules" /></a>
+    <a href="#-the-20-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-20%20Deep%20Guides-amber.svg?style=for-the-badge" alt="20 Modules" /></a>
     <a href="#-the-9-master-genre-playbooks"><img src="https://img.shields.io/badge/Playbooks-9%20Master%20Genres-indigo.svg?style=for-the-badge" alt="9 Master Genres" /></a>
+    <a href="#-multilingual-prose-humanizer--anti-ai-tells"><img src="https://img.shields.io/badge/Humanizer-Zero%20AI%20Slop-teal.svg?style=for-the-badge" alt="Zero AI Slop" /></a>
     <a href="#-user-intent-calibration--adaptive-intake"><img src="https://img.shields.io/badge/Adaptive%20Intake-100%25%20Custom-emerald.svg?style=for-the-badge" alt="Adaptive Intake" /></a>
-    <a href="#-narrative-logic--plot-hole-prevention"><img src="https://img.shields.io/badge/Continuity-Zero%20Plot%20Holes-teal.svg?style=for-the-badge" alt="Zero Plot Holes" /></a>
-    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Prose%20Quality-Anti--AI--Slop-red.svg?style=for-the-badge" alt="Anti Slop" /></a>
+    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Release-v2.0.0-rose.svg?style=for-the-badge" alt="v2.0.0" /></a>
   </p>
 </div>
 
@@ -137,6 +137,30 @@ Module 17 and Template 7 introduce a sociolinguistic engine based on **Martin Jo
 
 ---
 
+## 🧠 Multilingual Prose Humanizer & Anti-AI Tells
+
+Inspired by the rigorous linguistic mechanics of `humanizer-indonesia` and contemporary literary craft, **Novel Writing Craft v2.0.0** incorporates a dedicated **Multilingual Humanizer Engine** ([Module 20](references/20_multilingual_humanizer_and_anti_ai_tells.md) & [Template 9](templates/humanizer_multilingual_audit_card.md)) across **Bahasa Indonesia**, **English**, and **Global Bilingual Fiction**.
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                   THE 6 DEADLY SINS OF MACHINE FICTION                 │
+├─────────────────────┬──────────────────────────────────────────────────┤
+│ 1. The Metronome    │ Monotonous 18–24 word sentences (StdDev < 6.0)   │
+│ 2. Connector Bloat  │ Gluing ideas with Furthermore / Selain itu       │
+│ 3. Light Verbs      │ Nominalizations: melakukan tatapan -> menatap    │
+│ 4. Kalke Slop       │ Literal calques: he found himself -> tahu-tahu   │
+│ 5. Anticipatory Neg │ "X, not that Y" / "X, bukan berarti Y"           │
+│ 6. Cliché Triplets  │ Packaging adjectives in 3s (brave, strong, wise) │
+└─────────────────────┴──────────────────────────────────────────────────┘
+```
+
+* **Fiction Kalke Zero-Tolerance:** Automatically detects and purges machine loan-translations (*"menemukan dirinya"*, *"membuat akal sehat"*, *"mengambil napas dalam"*, *"tapestri takdir"*, *"ruangan jatuh hening"*, *"let out a breath he didn't know he was holding"*).
+* **Asymmetric Sentence Breathing:** Combines 3-word punchy staccato lines with expansive 28-word sensory periods, eliminating the robotic AI rhythm.
+* **Organic Cohesion:** Disables transition connector addiction (*Oleh karena itu, Di sisi lain, Selain itu*), replacing them with natural keyword echoes and Indonesian clitics (`-nya`).
+* **The Diagnostic CLI:** The included `scripts/check_pacing.py` automatically measures reading duration, dialogue ratios, sentence standard deviation (metronome check), and flags over 25+ specific AI tells.
+
+---
+
 ## 🌐 Universal AI Compatibility
 
 You don't need to be a developer or run code agents to use this. You can plug this skill directly into your everyday AI chat platform:
@@ -172,7 +196,7 @@ You don't need to be a developer or run code agents to use this. You can plug th
 
 ## 🏛️ Architecture Overview
 
-Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 19 specialized domain modules on demand:
+Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 20 specialized domain modules on demand:
 
 ```
 novel-writing-craft-skill/
@@ -181,7 +205,7 @@ novel-writing-craft-skill/
 │   └── logo.png                        # Rendered 512px high-res asset
 ├── .github/workflows/
 │   └── validate-skill.yml              # Automated CI/CD diagnostic tester
-├── references/                         # The 19 In-Depth Craft Modules
+├── references/                         # The 20 In-Depth Craft Modules
 │   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat 15 Beats, 7-Point, Story Grid
 │   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie Believed, Want vs Need, 4 Arcs
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction-Dilemma-Decision
@@ -199,10 +223,12 @@ novel-writing-craft-skill/
 │   ├── 15_genre_playbook_fantasy_and_progression.md # Fantasy & Progression/Isekai (Quantified Growth, Face-Slapping)
 │   ├── 16_plothole_prevention_and_logic_auditing.md # Plot Hole Taxonomies, Causality Auditing & 4-Gates Test
 │   ├── 17_linguistic_realism_idiolects_and_verisimilitude.md # 5 Registers, Code-Switching, 6D Voice Fingerprints & Sensory Thisness
-│   ├── 18_expanded_genre_playbooks_master_matrix.md # [NEW] 6 Extra Playbooks: Horror, Sci-Fi, Romantasy, Palace/Wuxia, Slice-of-Life, Heist
-│   └── 19_user_intent_calibration_and_adaptive_intake.md # [NEW] 6 Creative Sliders, Express vs Master Intake, Anti-Trope Guardrails
+│   ├── 18_expanded_genre_playbooks_master_matrix.md # 6 Extra Playbooks: Horror, Sci-Fi, Romantasy, Palace/Wuxia, Slice-of-Life, Heist
+│   ├── 19_user_intent_calibration_and_adaptive_intake.md # 6 Creative Sliders, Express vs Master Intake, Anti-Trope Guardrails
+│   └── 20_multilingual_humanizer_and_anti_ai_tells.md # [NEW] Multilingual Humanizer, Anti-Kalke Dictionary, Connector Bloat & Metronome Breaks
 ├── templates/                          # Production-Ready Plotting Cards & Ledgers
-│   ├── creative_intent_and_project_brief_template.md # [NEW] Comprehensive Author Onboarding & Intent Brief
+│   ├── creative_intent_and_project_brief_template.md # Comprehensive Author Onboarding & Intent Brief
+│   ├── humanizer_multilingual_audit_card.md # [NEW] Diagnostic Quality Gate for Humanizer Auditing
 │   ├── character_dossier_template.md   # 3D character psychological spec
 │   ├── character_linguistic_fingerprint_template.md # 6D Voice Fingerprint & Register Modulation Spec
 │   ├── chapter_outline_template.md     # Scene & Sequel chapter blueprint
@@ -231,14 +257,16 @@ flowchart LR
     B -->|Genre Specialization| D[genre-specialist]
     B -->|Character Psychology| E[profiler]
     B -->|Prose Execution| F[drafter]
+    B -->|Multilingual Humanizing| H[humanizer]
     B -->|Diagnostic Audit| G[editor]
 
     IC --> HB[project_brief.md]
-    C --> H[plot_outline.md]
+    C --> HO[plot_outline.md]
     CA --> CAL[story_bible_audit.md]
     D --> I[genre_contract_spec.md]
     E --> J[character_dossier.md]
     F --> K[Chapter_XX.md]
+    H --> HC[humanizer_audit.md]
     G --> L[check_pacing.py Report]
 ```
 

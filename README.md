@@ -8,13 +8,14 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://github.com/Rangga11268/novel-writing-craft-skill/actions"><img src="https://img.shields.io/badge/CI-Passing-success.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" /></a>
     <a href="#-universal-ai-compatibility"><img src="https://img.shields.io/badge/Universal%20AI-Gemini%20%7C%20ChatGPT%20%7C%20Claude%20%7C%20DeepSeek-purple.svg?style=for-the-badge" alt="Universal AI" /></a>
-    <a href="#-the-23-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-23%20Deep%20Guides-amber.svg?style=for-the-badge" alt="23 Modules" /></a>
+    <a href="#-the-24-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-24%20Deep%20Guides-amber.svg?style=for-the-badge" alt="24 Modules" /></a>
     <a href="#-the-9-master-genre-playbooks"><img src="https://img.shields.io/badge/Playbooks-9%20Master%20Genres-indigo.svg?style=for-the-badge" alt="9 Master Genres" /></a>
+    <a href="#-multi-agent-fiction-studio--simulated-beta-reader-engine"><img src="https://img.shields.io/badge/Studio-Multi--Agent%20%26%20Beta%20Readers-blueviolet.svg?style=for-the-badge" alt="Multi-Agent Studio" /></a>
     <a href="#-prologue--epilogue-architecture-mastery"><img src="https://img.shields.io/badge/Architecture-Prologue%20%26%20Epilogue-green.svg?style=for-the-badge" alt="Prologue & Epilogue" /></a>
     <a href="#-forensic-dialogue-masterclass-living-speech-from-literary-masters"><img src="https://img.shields.io/badge/Dialogue-Forensic%20Masters-cyan.svg?style=for-the-badge" alt="Forensic Dialogue Masters" /></a>
     <a href="#-nusantara-bestseller-craft-tere-liye--js-khairen"><img src="https://img.shields.io/badge/Bestseller-Tere%20Liye%20%26%20JS%20Khairen-orange.svg?style=for-the-badge" alt="Tere Liye & JS Khairen" /></a>
     <a href="#-multilingual-prose-humanizer--anti-ai-tells"><img src="https://img.shields.io/badge/Humanizer-Zero%20AI%20Slop-teal.svg?style=for-the-badge" alt="Zero AI Slop" /></a>
-    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Release-v2.3.0-rose.svg?style=for-the-badge" alt="v2.3.0" /></a>
+    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Release-v2.4.0-rose.svg?style=for-the-badge" alt="v2.4.0" /></a>
   </p>
 </div>
 
@@ -255,7 +256,36 @@ To eliminate amateur info-dumps and the rampant "AI-slop" prologue syndrome, **v
 
 ---
 
-You don't need to be a developer or run code agents to use this. You can plug this skill directly into your everyday AI chat platform:
+## 👥 Multi-Agent Fiction Studio & Simulated Beta Reader Engine
+
+Long-form fiction breaks down when handled by a single monolithic prompt. **v2.4.0** introduces a production-ready **Dual-State Multi-Agent Architecture** ([Module 24](references/24_multi_agent_fiction_studio_and_beta_reader_simulation.md) & [AGENTS.md](AGENTS.md)):
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│             DUAL-STATE ISOLATION & 5-STAGE STUDIO PIPELINE             │
+├─────────────────────┬──────────────────────────────────────────────────┤
+│ Read-Only Canon     │ Story Bible, World Rules, Linguistic Fingerprints│
+│ Versioned Delta     │ Physical inventory, carried wounds, secrets      │
+├─────────────────────┼──────────────────────────────────────────────────┤
+│ 1. Story Architect  │ Beats, scene & sequel, life-value shifts (+/-)   │
+│ 2. Scene Drafter    │ Visceral 5-sense prose, strict POV lock, anti-I  │
+│ 3. Logic Auditor    │ Knowledge states, travel logistics, causality    │
+│ 4. Humanizer Editor │ Metronome breathing, kalke purge, dialogue audit │
+│ 5. Beta Reader Panel│ 4 Simulated Personas & Emotional Heatmap Scoring │
+└─────────────────────┴──────────────────────────────────────────────────┘
+```
+
+* **The 4 Simulated Beta Personas:**
+  1. *The Casual Scroller:* Gauges drop-off risk, pacing drags, and mobile attention fatigue.
+  2. *The Genre Purist:* Enforces hard genre contracts (HEA, Fair-Play Clues, Quantified Progression).
+  3. *The Empathy Reader:* Measures cringe thresholds, emotional tears, and earned vulnerability.
+  4. *The Continuity Hawk:* Tracks physical injuries, timeline drift, and spatial orientation.
+* **Long-Term Foreshadowing Lifecycle (伏笔 Fu-Bi):** Tracks setup, watering, red herring misdirection, and climactic harvest across 50–100+ chapters via [foreshadowing_and_chekhov_lifecycle_ledger.md](templates/foreshadowing_and_chekhov_lifecycle_ledger.md).
+* **CLI Continuity Auditor:** Included [`scripts/audit_continuity.py`](scripts/audit_continuity.py) deterministically checks POV leaks, thought verb density, and theatrical tag ratios.
+
+---
+
+## 🌐 Universal AI Compatibility
 
 ### 1. Google Gemini (Gemini Advanced & Gems)
 * **Create a Custom Gem:** Open Gemini $\rightarrow$ click **Gem Manager** $\rightarrow$ **New Gem**.
@@ -288,7 +318,7 @@ You don't need to be a developer or run code agents to use this. You can plug th
 
 ## 🏛️ Architecture Overview
 
-Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 23 specialized domain modules on demand:
+Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 24 specialized domain modules on demand:
 
 ```
 novel-writing-craft-skill/
@@ -297,7 +327,8 @@ novel-writing-craft-skill/
 │   └── logo.png                        # Rendered 512px high-res asset
 ├── .github/workflows/
 │   └── validate-skill.yml              # Automated CI/CD diagnostic tester
-├── references/                         # The 23 In-Depth Craft Modules
+├── AGENTS.md                           # Multi-Agent Fiction Studio Specification
+├── references/                         # The 24 In-Depth Craft Modules
 │   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat 15 Beats, 7-Point, Story Grid
 │   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie Believed, Want vs Need, 4 Arcs
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction-Dilemma-Decision
@@ -320,7 +351,8 @@ novel-writing-craft-skill/
 │   ├── 20_multilingual_humanizer_and_anti_ai_tells.md # Multilingual Humanizer, Anti-Kalke Dictionary, Connector Bloat & Metronome Breaks
 │   ├── 21_bestseller_craft_tere_liye_and_js_khairen.md # Zero-Friction Prose, Ticking Clocks, Trio Dynamics, Gritty Youth Satire & Filial Gut-Punches
 │   ├── 22_forensic_dialogue_analysis_masters.md # Forensic Dialogue Analyses (Tere Liye, JS Khairen, Hemingway, Murakami, Rooney)
-│   └── 23_prologue_and_epilogue_mastery.md # [NEW] Prologue & Epilogue Architecture (5 AI-Slop Sins, 4 Master Types, Circular Bookends & Cut Test)
+│   ├── 23_prologue_and_epilogue_mastery.md # Prologue & Epilogue Architecture (5 AI-Slop Sins, 4 Master Types, Circular Bookends & Cut Test)
+│   └── 24_multi_agent_fiction_studio_and_beta_reader_simulation.md # [NEW] Multi-Agent Studio, Dual-State Canon vs Delta, 4 Beta Personas & Fubi Lifecycle
 ├── templates/                          # Production-Ready Plotting Cards & Ledgers
 │   ├── creative_intent_and_project_brief_template.md # Comprehensive Author Onboarding & Intent Brief
 │   ├── humanizer_multilingual_audit_card.md # Diagnostic Quality Gate for Humanizer Auditing
@@ -330,9 +362,11 @@ novel-writing-craft-skill/
 │   ├── scene_beat_sheet_template.md    # 5-beat micro-scene rhythm
 │   ├── word_count_and_act_budget_calculator.md # Mathematical act & pacing budget worksheet
 │   ├── book_proposal_pitch_template.md # Logline, comps & premise pitch
-│   └── story_bible_and_continuity_ledger.md # Master timeline, spatial, epistemic & Chekhov gun tracker
+│   ├── story_bible_and_continuity_ledger.md # Master timeline, spatial, epistemic & Chekhov gun tracker
+│   └── foreshadowing_and_chekhov_lifecycle_ledger.md # [NEW] 4-Phase Foreshadowing (伏笔) & Chekhov Gun Lifecycle Ledger
 ├── scripts/
-│   └── check_pacing.py                 # Telemetry CLI for word counts, reading duration, dialogue ratios & translationese detection
+│   ├── check_pacing.py                 # Telemetry CLI for word counts, reading duration, dialogue ratios & translationese detection
+│   └── audit_continuity.py            # [NEW] CLI for POV leaks, dialogue tag health, thought verb density & Chekhov verification
 ├── SKILL.md                            # Universal AI Entrypoint
 ├── CONTRIBUTING.md                     # Community contribution guidelines
 ├── LICENSE                             # MIT Open Source

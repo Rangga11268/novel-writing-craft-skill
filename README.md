@@ -8,11 +8,12 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
     <a href="https://github.com/Rangga11268/novel-writing-craft-skill/actions"><img src="https://img.shields.io/badge/CI-Passing-success.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI Status" /></a>
     <a href="#-universal-ai-compatibility"><img src="https://img.shields.io/badge/Universal%20AI-Gemini%20%7C%20ChatGPT%20%7C%20Claude%20%7C%20DeepSeek-purple.svg?style=for-the-badge" alt="Universal AI" /></a>
-    <a href="#-the-21-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-21%20Deep%20Guides-amber.svg?style=for-the-badge" alt="21 Modules" /></a>
+    <a href="#-the-22-deep-craft-modules"><img src="https://img.shields.io/badge/Modules-22%20Deep%20Guides-amber.svg?style=for-the-badge" alt="22 Modules" /></a>
     <a href="#-the-9-master-genre-playbooks"><img src="https://img.shields.io/badge/Playbooks-9%20Master%20Genres-indigo.svg?style=for-the-badge" alt="9 Master Genres" /></a>
+    <a href="#-forensic-dialogue-masterclass-living-speech-from-literary-masters"><img src="https://img.shields.io/badge/Dialogue-Forensic%20Masters-cyan.svg?style=for-the-badge" alt="Forensic Dialogue Masters" /></a>
     <a href="#-nusantara-bestseller-craft-tere-liye--js-khairen"><img src="https://img.shields.io/badge/Bestseller-Tere%20Liye%20%26%20JS%20Khairen-orange.svg?style=for-the-badge" alt="Tere Liye & JS Khairen" /></a>
     <a href="#-multilingual-prose-humanizer--anti-ai-tells"><img src="https://img.shields.io/badge/Humanizer-Zero%20AI%20Slop-teal.svg?style=for-the-badge" alt="Zero AI Slop" /></a>
-    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Release-v2.1.0-rose.svg?style=for-the-badge" alt="v2.1.0" /></a>
+    <a href="#-zero-ai-slop-creed"><img src="https://img.shields.io/badge/Release-v2.2.0-rose.svg?style=for-the-badge" alt="v2.2.0" /></a>
   </p>
 </div>
 
@@ -189,6 +190,42 @@ To capture the emotional power and unputdownable velocity of Indonesia’s top m
 
 ---
 
+## 🎙️ Forensic Dialogue Masterclass: Living Speech from Literary Masters
+
+Default AI dialogue suffers from **Theatrical Subtitle Syndrome**: characters speak in full grammatical clauses (SPOK), over-explain their technical metaphors, and announce their emotions directly like actors reading off cue cards.
+
+In **v2.2.0**, [Module 22](references/22_forensic_dialogue_analysis_masters.md) synthesizes comparative line-by-line analyses of living dialogue from five masters across Indonesian and world literature:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                   FORENSIC DIALOGUE COMPARATIVE MATRIX                 │
+├───────────────────┬───────────────────┬────────────────────────────────┤
+│ Master Author     │ Core Craft Secret │ The Anti-AI Dynamic            │
+├───────────────────┼───────────────────┼────────────────────────────────┤
+│ Ernest Hemingway  │ Iceberg Evasion   │ 90% unsaid; arguing mundane    │
+│                   │                   │ drinks/luggage to avoid trauma │
+│ Tere Liye         │ Trio Dynamics &   │ Compass + Dynamo + Contrarian; │
+│                   │ Underworld Brevity│ embedded in physical action    │
+│ J.S. Khairen      │ Socio-Economic    │ Gallows humor & filial guilt   │
+│                   │ Realism & Banter  │ as armor against poverty       │
+│ Haruki Murakami   │ Vulnerable Candor │ Concrete idiosyncratic anchors │
+│                   │ & Quirky Detail   │ replacing melodrama            │
+│ Sally Rooney      │ Class Friction &  │ Silence as weapon; paralysis   │
+│                   │ Insecurity Slur   │ from socio-economic gulf       │
+└───────────────────┴───────────────────┴────────────────────────────────┘
+```
+
+* **The 7 Absolute Laws of Living Dialogue:**
+  1. **Law of Evasion:** Real humans rarely answer questions directly when stakes are high—they deflect, counter-attack, or talk about physical objects.
+  2. **Law of the Physical Third (Action Beats):** Dialogue never exists in a void. Characters stir cold coffee, pick at peeling tape, or clean glasses while talking.
+  3. **Law of Sentence Fragments:** Real spoken speech uses 1-4 word bursts, ellipses, and interrupted thoughts, never complete multi-clause academic syntax.
+  4. **Law of Socio-Economic Friction:** Money, debt, and class hierarchy secretly govern how confident or hesitant a speaker feels in every room.
+  5. **Law of Asymmetric Knowledge:** Characters should never explain things to each other that they both already know purely to inform the reader (*"As you know, Bob"*).
+  6. **Law of Idiolect Fingerprinting:** Obscure dialogue tags; if you cannot immediately identify the speaker by word choice and rhythm, rewrite the lines.
+  7. **Law of Acoustic Verification:** Every line of dialogue must be read aloud; if the tongue stumbles or it sounds like a translated Netflix subtitle, purge it.
+
+---
+
 ## 🌐 Universal AI Compatibility
 
 You don't need to be a developer or run code agents to use this. You can plug this skill directly into your everyday AI chat platform:
@@ -224,7 +261,7 @@ You don't need to be a developer or run code agents to use this. You can plug th
 
 ## 🏛️ Architecture Overview
 
-Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 21 specialized domain modules on demand:
+Built on **Progressive Disclosure**, keeping the primary AI instruction (`SKILL.md`) razor-sharp while providing 22 specialized domain modules on demand:
 
 ```
 novel-writing-craft-skill/
@@ -233,7 +270,7 @@ novel-writing-craft-skill/
 │   └── logo.png                        # Rendered 512px high-res asset
 ├── .github/workflows/
 │   └── validate-skill.yml              # Automated CI/CD diagnostic tester
-├── references/                         # The 21 In-Depth Craft Modules
+├── references/                         # The 22 In-Depth Craft Modules
 │   ├── 01_narrative_architectures.md   # 3-Act, Save the Cat 15 Beats, 7-Point, Story Grid
 │   ├── 02_character_psychology_and_arcs.md # The Wound, The Lie Believed, Want vs Need, 4 Arcs
 │   ├── 03_scene_and_sequel_mechanics.md    # Goal-Conflict-Disaster & Reaction-Dilemma-Decision
@@ -254,7 +291,8 @@ novel-writing-craft-skill/
 │   ├── 18_expanded_genre_playbooks_master_matrix.md # 6 Extra Playbooks: Horror, Sci-Fi, Romantasy, Palace/Wuxia, Slice-of-Life, Heist
 │   ├── 19_user_intent_calibration_and_adaptive_intake.md # 6 Creative Sliders, Express vs Master Intake, Anti-Trope Guardrails
 │   ├── 20_multilingual_humanizer_and_anti_ai_tells.md # Multilingual Humanizer, Anti-Kalke Dictionary, Connector Bloat & Metronome Breaks
-│   └── 21_bestseller_craft_tere_liye_and_js_khairen.md # [NEW] Zero-Friction Prose, Ticking Clocks, Trio Dynamics, Gritty Youth Satire & Filial Gut-Punches
+│   ├── 21_bestseller_craft_tere_liye_and_js_khairen.md # Zero-Friction Prose, Ticking Clocks, Trio Dynamics, Gritty Youth Satire & Filial Gut-Punches
+│   └── 22_forensic_dialogue_analysis_masters.md # [NEW] Forensic Dialogue Analyses (Tere Liye, JS Khairen, Hemingway, Murakami, Rooney)
 ├── templates/                          # Production-Ready Plotting Cards & Ledgers
 │   ├── creative_intent_and_project_brief_template.md # Comprehensive Author Onboarding & Intent Brief
 │   ├── humanizer_multilingual_audit_card.md # Diagnostic Quality Gate for Humanizer Auditing
